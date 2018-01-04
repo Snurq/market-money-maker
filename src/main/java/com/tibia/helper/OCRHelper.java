@@ -6,12 +6,14 @@ import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 
 public class OCRHelper {
+	private final String TESSERACT_DATA_PATH = "C:/Tesseract";
+	
 	private Tesseract tesseract;
 	
-	public OCRHelper(String dataPath) {
+	public OCRHelper() {
 		this.tesseract = new Tesseract();
 		
-		setup(dataPath);
+		setup(TESSERACT_DATA_PATH);
 	}
 	
 	private void setup(String dataPath) {

@@ -37,13 +37,11 @@ import com.tibia.model.Item;
 import net.sourceforge.tess4j.TesseractException;
 
 public class Facade {
-	private final String TESSERACT_DATA_PATH = "C:/Tesseract";
-	
 	private ImageHelper imageHelper;
 	private MouseHelper mouseHelper;
 	private KeyboardHelper keyboardHelper;
-	private OCRHelper ocrHelper;
 	private XMLHelper xmlHelper;
+	private CoodinatesHelper coodinatesHelper;
 	
 	private List<Item> items;
 	
@@ -51,17 +49,17 @@ public class Facade {
 		this.imageHelper = new ImageHelper();
 		this.mouseHelper = new MouseHelper();
 		this.keyboardHelper = new KeyboardHelper();
-		this.ocrHelper = new OCRHelper(TESSERACT_DATA_PATH);
 		this.xmlHelper = new XMLHelper();
+		this.coodinatesHelper = new CoodinatesHelper();
 	}
 	
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
 		this.items = xmlHelper.getItemsList();
 		
-		//startShopping();
+		startShopping("rotten p");
 	}	
 	
-	private void startShopping() throws InterruptedException, AWTException, IOException, TesseractException {
+	private void startShopping(String itemName) throws InterruptedException, AWTException, IOException, TesseractException {
     	delay(2000);
     	
     	this.mouseHelper.clickOnSearchBox();
@@ -72,7 +70,7 @@ public class Facade {
 
     	delay(1000);
     	
-    	keyboardHelper.type("rotten p");
+    	keyboardHelper.type(itemName);
 
     	delay(500);
     	
@@ -88,21 +86,13 @@ public class Facade {
 
     	delay(2000);
     	
-    	/**
-    	 * Taking a screenshot
-    	 */
-    	Robot robot = new Robot();
-    	String imageFile = "images/sample.png";
+    	String test = this.imageHelper.getTextFromImage(
+    			this.coodinatesHelper.FIRST_SELLER_END_AT_X_TOP,
+    			this.coodinatesHelper.FIRST_SELLER_END_AT_Y_TOP,
+    			this.coodinatesHelper.FIRST_SELLER_END_AT_X_BOTTOM,
+    			this.coodinatesHelper.FIRST_SELLER_END_AT_Y_BOTTOM);
     	
-    	Rectangle rectArea = new Rectangle(317, 280, 108, 30);
-    	//rectArea.add(new Point(425, 310));
-        BufferedImage screenFullImage = imageHelper.resize(robot.createScreenCapture(rectArea), 108 * 3, 30 * 3);
-        ImageIO.write(screenFullImage, "png", new File(imageFile));
-    
-    	/**
-    	 * Image recognizing
-    	 */
-    	System.out.println(ocrHelper.getTextFromImage("images/sample.png"));
+    	System.out.println(test);
 	}
 	
 	private void delay(int milliseconds) throws InterruptedException {
