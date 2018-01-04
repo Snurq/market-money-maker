@@ -1,4 +1,4 @@
-package com.tibia.helpers;
+package com.tibia.helper;
 
 import java.io.File;
 
