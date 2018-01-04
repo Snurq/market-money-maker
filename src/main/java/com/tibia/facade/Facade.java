@@ -1,36 +1,13 @@
 package com.tibia.facade;
 
 import java.awt.AWTException;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-
-import javax.imageio.ImageIO;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 import com.tibia.helper.CoodinatesHelper;
 import com.tibia.helper.ImageHelper;
 import com.tibia.helper.KeyboardHelper;
 import com.tibia.helper.MouseHelper;
-import com.tibia.helper.OCRHelper;
 import com.tibia.helper.XMLHelper;
 import com.tibia.model.Item;
 
@@ -54,14 +31,24 @@ public class Facade {
 	}
 	
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
+		delay(3000);
+		
 		this.items = xmlHelper.getItemsList();
 		
-		startShopping("rotten p");
+		delay(500);
+		
+		this.mouseHelper.clickOnAnonymous();
+    	
+    	delay(500);
+		
+		for (int i = 0; i < this.items.size(); i++) {
+			startShopping(this.items.get(i));
+			
+			delay(3000);
+		}
 	}	
 	
-	private void startShopping(String itemName) throws InterruptedException, AWTException, IOException, TesseractException {
-    	delay(2000);
-    	
+	private void startShopping(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
     	this.mouseHelper.clickOnSearchBox();
     	
     	delay(1000);
@@ -70,7 +57,7 @@ public class Facade {
 
     	delay(1000);
     	
-    	keyboardHelper.type(itemName);
+    	keyboardHelper.type(item.getName());
 
     	delay(500);
     	
@@ -82,17 +69,85 @@ public class Facade {
 
     	delay(500);
     	
-    	this.mouseHelper.clickOnAnonymous();
-
-    	delay(2000);
-    	
-    	String test = this.imageHelper.getTextFromImage(
+    	String id = this.imageHelper.getTextFromImage(
     			this.coodinatesHelper.FIRST_SELLER_END_AT_X_TOP,
     			this.coodinatesHelper.FIRST_SELLER_END_AT_Y_TOP,
     			this.coodinatesHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-    			this.coodinatesHelper.FIRST_SELLER_END_AT_Y_BOTTOM);
+    			this.coodinatesHelper.FIRST_SELLER_END_AT_Y_BOTTOM).trim();
     	
-    	System.out.println(test);
+    	if (id.equals(item.getId())) {
+    		System.out.println("Não comprou.");
+    	} else {
+    		if (id.equals("")) {
+    			int firstOffer = Math.round((item.getPrice() / 2));
+    			
+    			this.mouseHelper.clickOnPiecePriceBox();
+    	    	
+    	    	delay(1000);
+    	    	
+    	    	this.keyboardHelper.selectAllTextAndDelete();
+    	    	
+    			delay(1000);
+    	    	
+    			this.keyboardHelper.type(String.valueOf(firstOffer));
+    			
+    			delay(500);
+    			
+    			for (int i = 0; i < Math.round(this.coodinatesHelper.GOLD_PER_ITEM / firstOffer); i++) {
+    				this.mouseHelper.clickOnIncreaseItemQuantity();
+    				delay(50);
+    			}
+    			
+    			/**
+    			 * CLICK ON CREATE
+    			 */
+    			
+    			delay(1000);
+    			
+    			this.xmlHelper.updateItemId(id, item.getName());
+    			
+    			System.out.println("Primeiro ao comprar por: " + firstOffer);
+    		} else {
+        		int price = Integer.parseInt(this.imageHelper.getTextFromImage(
+            			this.coodinatesHelper.PIECE_PRICE_X_TOP,
+            			this.coodinatesHelper.PIECE_PRICE_Y_TOP,
+            			this.coodinatesHelper.PIECE_PRICE_X_BOTTOM,
+            			this.coodinatesHelper.PIECE_PRICE_Y_BOTTOM).trim());
+        		
+        		price = (price + 1);
+        		
+        		if (price < item.getPrice()) {
+        			this.mouseHelper.clickOnPiecePriceBox();
+        	    	
+        	    	delay(1000);
+        	    	
+        	    	this.keyboardHelper.selectAllTextAndDelete();
+        	    	
+        			delay(1000);
+        	    	
+        			keyboardHelper.type(String.valueOf(price));
+        			
+        			delay(500);
+        			
+        			for (int i = 0; i < Math.round(this.coodinatesHelper.GOLD_PER_ITEM / price); i++) {
+        				this.mouseHelper.clickOnIncreaseItemQuantity();
+        				delay(50);
+        			}
+        			
+        			/**
+        			 * CLICK ON CREATE
+        			 */
+        			
+        			delay(1000);
+        			
+        			this.xmlHelper.updateItemId(id, item.getName());
+        			
+        			System.out.println("Comprando por: " + price);
+        		}
+    		}
+    		
+    		System.out.println("Comprou.");
+    	}
 	}
 	
 	private void delay(int milliseconds) throws InterruptedException {

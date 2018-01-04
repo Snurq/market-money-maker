@@ -1,6 +1,8 @@
 package com.tibia.helper;
 
 public class CoodinatesHelper {
+	public final int GOLD_PER_ITEM = 5000;
+	
 	public final int SEARCH_BOX_X = 330;
 	public final int SEARCH_BOX_Y = 595;
 	
@@ -12,6 +14,12 @@ public class CoodinatesHelper {
 	
 	public final int BUY_RADIO_X = 455;
 	public final int BUY_RADIO_Y = 550;
+	
+	public final int ITEM_QUANTITY_X = 778;
+	public final int ITEM_QUANTITY_Y = 549;
+	
+	public final int PIECE_PRICE_X = 650;
+	public final int PIECE_PRICE_Y = 570;
 	
 	public final int ANONYMOUS_CHECKBOX_X = 865;
 	public final int ANONYMOUS_CHECKBOX_Y = 595;

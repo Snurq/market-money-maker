@@ -19,8 +19,20 @@ public class MouseHelper {
 	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
 	}
 	
+	public void clickOnIncreaseItemQuantity() throws AWTException {
+		this.robot.mouseMove(this.coodinatesHelper.ITEM_QUANTITY_X, this.coodinatesHelper.ITEM_QUANTITY_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
 	public void clickOnSearchBox() throws AWTException {
 		this.robot.mouseMove(this.coodinatesHelper.SEARCH_BOX_X, this.coodinatesHelper.SEARCH_BOX_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
+	public void clickOnPiecePriceBox() throws AWTException {
+		this.robot.mouseMove(this.coodinatesHelper.PIECE_PRICE_X, this.coodinatesHelper.PIECE_PRICE_Y);    
 	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
 	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
 	}

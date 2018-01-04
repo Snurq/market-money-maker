@@ -37,7 +37,12 @@ public class ImageHelper {
     	return this.ocrHelper.getTextFromImage(SAMPLE_IMAGE_PATH);
 	}
 	
-	private int[] getSizeFromTwoPoints() {
+	private int[] getSizeFromTwoPoints(int topX, int topY, int bottomX, int bottomY) {
+		int[] size = new int[2];
 		
+		size[0] = (bottomX - topX);
+		size[1] = (bottomY - topY);
+				
+		return size;
 	}
 }

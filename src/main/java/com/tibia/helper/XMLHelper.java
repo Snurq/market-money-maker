@@ -42,7 +42,36 @@ public class XMLHelper {
 
             for (int i = 0; i < nodeList.getLength(); i++) {
             	items.add(getItem(nodeList.item(i)));
-            	updateItemId(doc, "2018-02-01, 18:32:22", "Bonecarving Knife");
+            }
+        } catch (SAXException | ParserConfigurationException | IOException e) {
+            e.printStackTrace();
+        }
+        
+		return items;
+	}
+	
+	public void updateItemId(String itemId, String itemName) {
+        File xmlFile = new File(ITEMS_LIST_XML_PATH);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder;
+        
+        try {
+            dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(xmlFile);
+            doc.getDocumentElement().normalize();
+
+            NodeList items = doc.getElementsByTagName("Item");
+            Element item = null;
+
+            for (int i = 0; i < items.getLength(); i++) {
+            	item = (Element) items.item(i);
+            	
+            	String name = item.getElementsByTagName("name").item(0).getFirstChild().getNodeValue();
+            	
+            	if (name.equals(itemName)) {
+            		Node id = item.getElementsByTagName("id").item(0).getFirstChild();
+                    id.setNodeValue(itemId);
+            	}
             }
             
             doc.getDocumentElement().normalize();
@@ -56,25 +85,7 @@ public class XMLHelper {
         } catch (SAXException | ParserConfigurationException | IOException | TransformerException e) {
             e.printStackTrace();
         }
-        
-		return items;
 	}
-	
-	private void updateItemId(Document doc, String itemId, String itemNameToChange) {
-        NodeList items = doc.getElementsByTagName("Item");
-        Element item = null;
-
-        for (int i = 0; i < items.getLength(); i++) {
-        	item = (Element) items.item(i);
-        	
-        	String name = item.getElementsByTagName("name").item(0).getFirstChild().getNodeValue();
-        	
-        	if (name.equals(itemNameToChange)) {
-        		Node id = item.getElementsByTagName("id").item(0).getFirstChild();
-                id.setNodeValue(itemId);
-        	}
-        }
-    }
 	
 	private Item getItem(Node node) {
         Item item = new Item();

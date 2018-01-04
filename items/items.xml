@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Items>
-	<Item>
-		<id>0</id><name>Boggy Dreads</name><price>200</price>
-	</Item>
-	<Item>
-		<id>0</id><name>Bonecarving Knife</name><price>190</price>
+	<Item npc="Malunga">
+		<id>2018—02—03, 13:41:13</id><name>Boggy Dreads</name><price>200</price>
 	</Item>
 </Items>

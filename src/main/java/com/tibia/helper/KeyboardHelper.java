@@ -86,6 +86,26 @@ public class KeyboardHelper {
     		return KeyEvent.VK_X;
     	else if (c == 'Z' || c == 'z')
     		return KeyEvent.VK_Z;
+    	else if (c == '0')
+    		return KeyEvent.VK_0;
+    	else if (c == '1')
+    		return KeyEvent.VK_1;
+    	else if (c == '2')
+    		return KeyEvent.VK_2;
+    	else if (c == '3')
+    		return KeyEvent.VK_3;
+    	else if (c == '4')
+    		return KeyEvent.VK_4;
+    	else if (c == '5')
+    		return KeyEvent.VK_5;
+    	else if (c == '6')
+    		return KeyEvent.VK_6;
+    	else if (c == '7')
+    		return KeyEvent.VK_7;
+    	else if (c == '8')
+    		return KeyEvent.VK_8;
+    	else if (c == '9')
+    		return KeyEvent.VK_9;
     	else if (c == ' ')
     		return KeyEvent.VK_SPACE;
     	else
