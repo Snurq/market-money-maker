@@ -79,7 +79,8 @@ public class Facade {
     			.trim()
     			.replaceAll(" ", "")
     			.replaceAll(",", ", ")
-    			.replaceAll("l", "1");
+    			.replaceAll("l", "1")
+				.replaceAll("O", "0");
     	
     	if (id.equals(item.getId())) {
     		System.out.println("Não comprou " + item.getName() + ". Já existe uma oferta.");
@@ -116,7 +117,8 @@ public class Facade {
     					.trim()
     					.replaceAll(" ", "")
     					.replaceAll(",", ", ")
-    					.replaceAll("l", "1");
+    					.replaceAll("l", "1")
+    					.replaceAll("O", "0");
     			
     			delay(1000);
     			
@@ -132,7 +134,8 @@ public class Facade {
         				.trim()
     					.replaceAll(" ", "")
         				.replaceAll(",", "")
-        				.replaceAll("l", "1"));
+        				.replaceAll("l", "1")
+        				.replaceAll("O", "0"));
         		
         		price = (price + 1);
         		
@@ -166,7 +169,8 @@ public class Facade {
             				.trim()
         					.replaceAll(" ", "")
             				.replaceAll(",", ", ")
-            				.replaceAll("l", "1");
+            				.replaceAll("l", "1")
+            				.replaceAll("O", "0");
         			
         			delay(1000);
         			
