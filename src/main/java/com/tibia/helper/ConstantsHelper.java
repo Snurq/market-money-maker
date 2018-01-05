@@ -1,7 +1,10 @@
 package com.tibia.helper;
 
-public class CoodinatesHelper {
+public class ConstantsHelper {
 	public final int GOLD_PER_ITEM = 5000;
+	
+	public final int CLOSE_MARKET_X = 950;
+	public final int CLOSE_MARKET_Y = 635;
 	
 	public final int SEARCH_BOX_X = 330;
 	public final int SEARCH_BOX_Y = 595;
@@ -24,7 +27,7 @@ public class CoodinatesHelper {
 	public final int ANONYMOUS_CHECKBOX_X = 865;
 	public final int ANONYMOUS_CHECKBOX_Y = 595;
 	
-	public final int CREATE_OFFER_X = 980;
+	public final int CREATE_OFFER_X = 975;
 	public final int CREATE_OFFER_Y = 595;
 	
 	public final int PIECE_PRICE_X_TOP = 642;

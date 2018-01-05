@@ -5,7 +5,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 public class KeyboardHelper {
-    Robot robot;
+    private Robot robot;
     
     public KeyboardHelper() throws AWTException {
     	this.robot = new Robot();
@@ -108,6 +108,8 @@ public class KeyboardHelper {
     		return KeyEvent.VK_9;
     	else if (c == ' ')
     		return KeyEvent.VK_SPACE;
+    	else if (c == '-')
+    		return KeyEvent.VK_MINUS;
     	else
     		return 0;
     }

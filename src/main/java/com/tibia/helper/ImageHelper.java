@@ -28,10 +28,11 @@ public class ImageHelper {
 	}
 	
 	public String getTextFromImage(int topX, int topY, int bottomX, int bottomY) throws IOException, TesseractException {
+		int rateToResizeImage = 10;
 		int[] rectangleSize = getSizeFromTwoPoints(topX, topY, bottomX, bottomY);
 		
     	Rectangle rectArea = new Rectangle(topX, topY, rectangleSize[0], rectangleSize[1]);
-        BufferedImage screenFullImage = resize(this.robot.createScreenCapture(rectArea), rectangleSize[0] * 3, rectangleSize[1] * 3);
+        BufferedImage screenFullImage = resize(this.robot.createScreenCapture(rectArea), rectangleSize[0] * rateToResizeImage, rectangleSize[1] * rateToResizeImage);
         ImageIO.write(screenFullImage, "png", new File(SAMPLE_IMAGE_PATH));
     	
     	return this.ocrHelper.getTextFromImage(SAMPLE_IMAGE_PATH);
