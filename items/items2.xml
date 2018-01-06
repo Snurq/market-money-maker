@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="NahBob_Haroun">
+	<Item>
+		<id>2018-02-04, 16:02:44</id><name>Angelic Axe</name><price>5000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:03:05</id><name>Broadsword</name><price>500</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:03:23</id><name>Crown Helmet</name><price>2500</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:32:44</id><name>Crown Shield</name><price>8000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:33:01</id><name>Crusader Helmet</name><price>6000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:33:18</id><name>Dragon Shield</name><price>4000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:04:32</id><name>Fire Sword</name><price>4000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:33:44</id><name>Glorious Axe</name><price>3000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:05:09</id><name>Guardian Shield</name><price>2000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:05:35</id><name>Obsidian Lance</name><price>500</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:40:12</id><name>Wand of Cosmic Energy</name><price>2000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:06:32</id><name>Wand of Decay</name><price>1000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:40:39</id><name>Wand of Draconia</name><price>1500</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:07:24</id><name>Wand of Dragonbreath</name><price>200</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:41:07</id><name>Wand of Inferno</name><price>3000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 16:08:00</id><name>Wand of Starstorm</name><price>3600</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 23:41:33</id><name>Wand of Voodoo</name><price>4400</price>
+	</Item>
+</Items>

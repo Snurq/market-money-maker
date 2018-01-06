@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Fiona">
+	<Item>
+		<id>2018-02-04, 12:22:23</id><name>Basalt Fe</name><price>210</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:22:44</id><name>Basalt Fi</name><price>160</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:23:01</id><name>Behemoth C</name><price>2000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:23:18</id><name>Berserk P</name><price>500</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:23:35</id><name>Blazing B</name><price>610</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:23:53</id><name>Blood T</name><price>360</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:24:19</id><name>Bloody D</name><price>110</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:24:49</id><name>Bola</name><price>35</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:25:08</id><name>Bone F</name><price>150</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:25:25</id><name>Bony Tail</name><price>210</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:25:43</id><name>Brimstone Fangs</name><price>380</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:28:27</id><name>Brimstone Shell</name><price>210</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:28:46</id><name>Broken Throwing Axe</name><price>230</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:29:22</id><name>Carrion Worm Fang</name><price>35</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:29:47</id><name>Cheese Cutter</name><price>50</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:30:05</id><name>Deeptags</name><price>290</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:30:27</id><name>Demonic Skeletal Hand</name><price>80</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:30:45</id><name>Dragon Pri</name><price>175</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:31:04</id><name>s Tail</name><price>100</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:31:22</id><name>Draken Sulphur</name><price>550</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:31:42</id><name>Elder Bonelord Tentacle</name><price>150</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:32:07</id><name>Elven Astral Observer</name><price>90</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:32:46</id><name>Frosty Heart</name><price>280</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:33:06</id><name>Gauze Bandage</name><price>90</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:33:23</id><name>Giant Eye</name><price>380</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:34:03</id><name>Glob of Acid Slime</name><price>25</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:34:48</id><name>Glob of Mercury</name><price>20</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:37:12</id><name>Glob of Tar</name><price>30</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:37:33</id><name>Green Dragon Scale</name><price>100</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:37:51</id><name>Hellspawn Tail</name><price>475</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:38:08</id><name>Hideous Chunk</name><price>510</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:38:26</id><name>Holy Ash</name><price>160</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:38:43</id><name>Humongous Chunk</name><price>540</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:39:03</id><name>Key to the Drowned Library</name><price>330</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:39:33</id><name>Lost Basher</name><price>280</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:39:53</id><name>Lost Bracers</name><price>140</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:40:11</id><name>Lost Husher</name><price>250</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:40:27</id><name>Luminous Orb</name><price>1000</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:40:49</id><name>Mad Froth</name><price>80</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:41:13</id><name>Miraculum</name><price>60</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:41:31</id><name>Mystical Hourglass</name><price>700</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:42:00</id><name>Red Hair Dye</name><price>40</price>
+	</Item>
+	<Item>
+		<id>2018-02-04, 12:42:17</id><name>Scythe Leg</name><price>450</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Sea Serpent Scale</name><price>520</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Skull Shatterer</name><price>170</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Small Flask of Eyedrops</name><price>95</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Spellsinger</name><price>280</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Spooky Blue Eye</name><price>95</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Stone Wing</name><price>120</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Wimp Tooth Chain</name><price>120</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Wyrm Scale</name><price>400</price>
+	</Item>
+	<Item>
+		<id>0</id><name>Wyvern Talisman</name><price>265</price>
+	</Item>
+</Items>

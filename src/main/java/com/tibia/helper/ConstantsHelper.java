@@ -1,7 +1,7 @@
 package com.tibia.helper;
 
 public class ConstantsHelper {
-	public final int GOLD_PER_ITEM = 5000;
+	public final int GOLD_PER_ITEM = 30000;
 	
 	public final int CLOSE_MARKET_X = 950;
 	public final int CLOSE_MARKET_Y = 635;

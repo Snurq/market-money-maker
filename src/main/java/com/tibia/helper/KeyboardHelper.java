@@ -14,9 +14,9 @@ public class KeyboardHelper {
     public void type(String word) {
     	for (int i = 0; i < word.length(); i++) {
     		this.robot.keyPress(this.getKey(word.charAt(i)));
-    		this.robot.delay(100);
+    		this.robot.delay(50);
     		this.robot.keyRelease(this.getKey(word.charAt(i)));
-    		this.robot.delay(100); 
+    		this.robot.delay(50); 
     	}
     }
     
