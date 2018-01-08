@@ -96,7 +96,7 @@ public class XMLHelper {
             item.setId(getTagValue("id", element));
             item.setName(getTagValue("name", element));
             item.setPrice(Integer.parseInt(getTagValue("price", element)));
-            item.setPrice(Integer.parseInt(getTagValue("buy", element)));
+            item.setBuy(Integer.parseInt(getTagValue("buy", element)));
         }
 
         return item;

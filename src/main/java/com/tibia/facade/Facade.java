@@ -100,9 +100,9 @@ public class Facade {
 
 				delay(500);
 
-				for (int i = 0; i < Math.round(item.getBuy() / firstOffer); i++) {
+				for (int i = 1; i < item.getBuy(); i++) {
 					this.mouseHelper.clickOnIncreaseItemQuantity();
-					delay(50);
+					delay(150);
 				}
 
 				this.mouseHelper.clickOnCreateOffer();
@@ -152,9 +152,9 @@ public class Facade {
 
 					delay(500);
 
-					for (int i = 0; i < Math.round(item.getBuy() / price); i++) {
+					for (int i = 1; i < item.getBuy(); i++) {
 						this.mouseHelper.clickOnIncreaseItemQuantity();
-						delay(50);
+						delay(150);
 					}
 
 					this.mouseHelper.clickOnCreateOffer();
