@@ -19,9 +19,9 @@ public class Facade {
 	private KeyboardHelper keyboardHelper;
 	private XMLHelper xmlHelper;
 	private ConstantsHelper constantsHelper;
-	
+
 	private List<Item> items;
-	
+
 	public Facade() throws AWTException {
 		this.imageHelper = new ImageHelper();
 		this.mouseHelper = new MouseHelper();
@@ -29,161 +29,161 @@ public class Facade {
 		this.xmlHelper = new XMLHelper();
 		this.constantsHelper = new ConstantsHelper();
 	}
-	
+
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
 		delay(3000);
-		
-		this.items = xmlHelper.getItemsList();
-		
-		delay(500);
-		
-		this.mouseHelper.clickOnAnonymous();
-    	
-    	delay(500);
-    	
-    	this.mouseHelper.clickOnBuyButton();
 
-    	delay(500);
-		
+		this.items = xmlHelper.getItemsList();
+
+		delay(500);
+
+		this.mouseHelper.clickOnAnonymous();
+
+		delay(500);
+
+		this.mouseHelper.clickOnBuyButton();
+
+		delay(500);
+
 		for (int i = 0; i < this.items.size(); i++) {
 			startShopping(this.items.get(i));
-			
+
 			delay(2000);
 		}
-		
+
 		this.mouseHelper.clickOnCloseMarket();
 	}	
-	
+
 	private void startShopping(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
-    	this.mouseHelper.clickOnSearchBox();
-    	
-    	delay(500);
-    	
-    	this.keyboardHelper.selectAllTextAndDelete();
+		this.mouseHelper.clickOnSearchBox();
 
-    	delay(1000);
-    	
-    	this.keyboardHelper.type(item.getName());
+		delay(500);
 
-    	delay(500);
-    	
-    	this.mouseHelper.clickOnFirstFound();
+		this.keyboardHelper.selectAllTextAndDelete();
 
-    	delay(2500);
-    	
-    	String id = this.imageHelper.getTextFromImage(
-    			this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
-    			this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
-    			this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-    			this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
-    			.trim()
-    			.replaceAll(" ", "")
-    			.replaceAll(",", ", ")
-    			.replaceAll("l", "1")
+		delay(1000);
+
+		this.keyboardHelper.type(item.getName());
+
+		delay(500);
+
+		this.mouseHelper.clickOnFirstFound();
+
+		delay(2500);
+
+		String id = this.imageHelper.getTextFromImage(
+				this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
+				this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
+				this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
+				this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
+				.trim()
+				.replaceAll(" ", "")
+				.replaceAll(",", ", ")
+				.replaceAll("l", "1")
 				.replaceAll("O", "0");
-    	
-    	if (id.equals(item.getId())) {
-    		System.out.println("Não comprou " + item.getName() + ". Já existe uma oferta.");
-    	} else {
-    		if (id.equals("")) {
-    			int firstOffer = Math.round((item.getPrice() / 2));
-    			
-    			this.mouseHelper.clickOnPiecePriceBox();
-    	    	
-    	    	delay(500);
-    	    	
-    	    	this.keyboardHelper.selectAllTextAndDelete();
-    	    	
-    			delay(1000);
-    	    	
-    			this.keyboardHelper.type(String.valueOf(firstOffer));
-    			
-    			delay(500);
-    			
-    			for (int i = 0; i < Math.round(this.constantsHelper.GOLD_PER_ITEM / firstOffer); i++) {
-    				this.mouseHelper.clickOnIncreaseItemQuantity();
-    				delay(50);
-    			}
-    			
-    			this.mouseHelper.clickOnCreateOffer();
-    			
-    			delay(1500);
-    			
-    			String createdId = this.imageHelper.getTextFromImage(
-    	    			this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
-    	    			this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
-    	    			this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-    	    			this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
-    					.trim()
-    					.replaceAll(" ", "")
-    					.replaceAll(",", ", ")
-    					.replaceAll("l", "1")
-    					.replaceAll("O", "0");
-    			
-    			delay(1000);
-    			
-    			this.xmlHelper.updateItemId(createdId, item.getName());
-    			
-    			System.out.println("Primeiro ao comprar " + item.getName() + " por: " + firstOffer);
-    		} else {
-        		int price = Integer.parseInt(this.imageHelper.getTextFromImage(
-            			this.constantsHelper.PIECE_PRICE_X_TOP,
-            			this.constantsHelper.PIECE_PRICE_Y_TOP,
-            			this.constantsHelper.PIECE_PRICE_X_BOTTOM,
-            			this.constantsHelper.PIECE_PRICE_Y_BOTTOM)
-        				.trim()
-    					.replaceAll(" ", "")
-        				.replaceAll(",", "")
-        				.replaceAll("l", "1")
-        				.replaceAll("O", "0"));
-        		
-        		price = (price + 1);
-        		
-        		if (price < item.getPrice()) {
-        			this.mouseHelper.clickOnPiecePriceBox();
-        	    	
-        	    	delay(500);
-        	    	
-        	    	this.keyboardHelper.selectAllTextAndDelete();
-        	    	
-        			delay(1000);
-        	    	
-        			keyboardHelper.type(String.valueOf(price));
-        			
-        			delay(500);
-        			
-        			for (int i = 0; i < Math.round(this.constantsHelper.GOLD_PER_ITEM / price); i++) {
-        				this.mouseHelper.clickOnIncreaseItemQuantity();
-        				delay(50);
-        			}
-        			
-        			this.mouseHelper.clickOnCreateOffer();
-        			
-        			delay(1500);
-        			
-        			String createdId = this.imageHelper.getTextFromImage(
-        	    			this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
-        	    			this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
-        	    			this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-        	    			this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
-            				.trim()
-        					.replaceAll(" ", "")
-            				.replaceAll(",", ", ")
-            				.replaceAll("l", "1")
-            				.replaceAll("O", "0");
-        			
-        			delay(1000);
-        			
-        			this.xmlHelper.updateItemId(createdId, item.getName());
-        			
-        			System.out.println("Comprando " + item.getName() + " por: " + price);
-        		} else {
-        			System.out.println("Não comprou " + item.getName() + ". Caro demais.");
-        		}
-    		}
-    	}
+
+		if (id.equals(item.getId())) {
+			System.out.println("Não comprou " + item.getName() + ". Já existe uma oferta.");
+		} else {
+			if (id.equals("")) {
+				int firstOffer = Math.round((item.getPrice() / 2));
+
+				this.mouseHelper.clickOnPiecePriceBox();
+
+				delay(500);
+
+				this.keyboardHelper.selectAllTextAndDelete();
+
+				delay(1000);
+
+				this.keyboardHelper.type(String.valueOf(firstOffer));
+
+				delay(500);
+
+				for (int i = 0; i < Math.round(item.getBuy() / firstOffer); i++) {
+					this.mouseHelper.clickOnIncreaseItemQuantity();
+					delay(50);
+				}
+
+				this.mouseHelper.clickOnCreateOffer();
+
+				delay(1500);
+
+				String createdId = this.imageHelper.getTextFromImage(
+						this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
+						this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
+						this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
+						this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
+						.trim()
+						.replaceAll(" ", "")
+						.replaceAll(",", ", ")
+						.replaceAll("l", "1")
+						.replaceAll("O", "0");
+
+				delay(1000);
+
+				this.xmlHelper.updateItemId(createdId, item.getName());
+
+				System.out.println("Primeiro ao comprar " + item.getName() + " por: " + firstOffer);
+			} else {
+				int price = Integer.parseInt(this.imageHelper.getTextFromImage(
+						this.constantsHelper.PIECE_PRICE_X_TOP,
+						this.constantsHelper.PIECE_PRICE_Y_TOP,
+						this.constantsHelper.PIECE_PRICE_X_BOTTOM,
+						this.constantsHelper.PIECE_PRICE_Y_BOTTOM)
+						.trim()
+						.replaceAll(" ", "")
+						.replaceAll(",", "")
+						.replaceAll("l", "1")
+						.replaceAll("O", "0"));
+
+				price = (price + 1);
+
+				if (price < item.getPrice()) {
+					this.mouseHelper.clickOnPiecePriceBox();
+
+					delay(500);
+
+					this.keyboardHelper.selectAllTextAndDelete();
+
+					delay(1000);
+
+					keyboardHelper.type(String.valueOf(price));
+
+					delay(500);
+
+					for (int i = 0; i < Math.round(item.getBuy() / price); i++) {
+						this.mouseHelper.clickOnIncreaseItemQuantity();
+						delay(50);
+					}
+
+					this.mouseHelper.clickOnCreateOffer();
+
+					delay(1500);
+
+					String createdId = this.imageHelper.getTextFromImage(
+							this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
+							this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
+							this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
+							this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
+							.trim()
+							.replaceAll(" ", "")
+							.replaceAll(",", ", ")
+							.replaceAll("l", "1")
+							.replaceAll("O", "0");
+
+					delay(1000);
+
+					this.xmlHelper.updateItemId(createdId, item.getName());
+
+					System.out.println("Comprando " + item.getName() + " por: " + price);
+				} else {
+					System.out.println("Não comprou " + item.getName() + ". Caro demais.");
+				}
+			}
+		}
 	}
-	
+
 	private void delay(int milliseconds) throws InterruptedException {
 		Thread.sleep(milliseconds);
 	}

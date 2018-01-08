@@ -4,6 +4,7 @@ public class Item {
 	private String id;
     private String name;
     private int price;
+    private int buy;
     
 	public String getId() {
 		return id;
@@ -22,5 +23,11 @@ public class Item {
 	}
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	public int getBuy() {
+		return buy;
+	}
+	public void setBuy(int buy) {
+		this.buy = buy;
 	}
 }
