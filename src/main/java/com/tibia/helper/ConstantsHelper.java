@@ -4,7 +4,7 @@ public class ConstantsHelper {
 	/**
 	 * Dell
 	 */
-	public final int GOLD_PER_ITEM = 30000;
+	/*public final int GOLD_PER_ITEM = 30000;
 	
 	public final int CLOSE_MARKET_X = 1279;
 	public final int CLOSE_MARKET_Y = 699;
@@ -41,12 +41,12 @@ public class ConstantsHelper {
 	public final int FIRST_SELLER_END_AT_X_TOP = 1130;
 	public final int FIRST_SELLER_END_AT_Y_TOP = 447;
 	public final int FIRST_SELLER_END_AT_X_BOTTOM = 1302;
-	public final int FIRST_SELLER_END_AT_Y_BOTTOM = 461;
+	public final int FIRST_SELLER_END_AT_Y_BOTTOM = 461;*/
 	
 	/**
 	 * MacBook
 	 */
-	/*public final int GOLD_PER_ITEM = 30000;
+	public final int GOLD_PER_ITEM = 30000;
 	
 	public final int CLOSE_MARKET_X = 950;
 	public final int CLOSE_MARKET_Y = 635;
@@ -83,5 +83,5 @@ public class ConstantsHelper {
 	public final int FIRST_SELLER_END_AT_X_TOP = 812;
 	public final int FIRST_SELLER_END_AT_Y_TOP = 383;
 	public final int FIRST_SELLER_END_AT_X_BOTTOM = 983;
-	public final int FIRST_SELLER_END_AT_Y_BOTTOM = 397;*/
+	public final int FIRST_SELLER_END_AT_Y_BOTTOM = 397;
 }
