@@ -222,7 +222,7 @@ public class Facade {
 										} else {
 											keyboardHelper.type("ˇ");
 											
-											delay(500);
+											delay(100);
 										}
 									}
 								}
@@ -261,7 +261,7 @@ public class Facade {
 										} else {
 											keyboardHelper.type("ˇ");
 											
-											delay(200);
+											delay(100);
 										}
 									}
 								}
