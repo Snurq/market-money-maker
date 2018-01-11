@@ -18,6 +18,8 @@ import com.tibia.model.Item;
 import net.sourceforge.tess4j.TesseractException;
 
 public class Facade {
+	private List<Item> items;
+	
 	private ImageHelper image;
 	private MouseHelper mouse;
 	private KeyboardHelper keyboard;
@@ -25,63 +27,64 @@ public class Facade {
 	private ConstantsHelper constants;
 	private UtilHelper util;
 
-	private List<Item> items;
-
 	public Facade() throws AWTException {
-		this.image = new ImageHelper();
-		this.mouse = new MouseHelper();
-		this.keyboard = new KeyboardHelper();
-		this.xml = new XMLHelper();
-		this.constants = new ConstantsHelper();
-		this.util = new UtilHelper();
+		image = new ImageHelper();
+		mouse = new MouseHelper();
+		keyboard = new KeyboardHelper();
+		xml = new XMLHelper();
+		constants = new ConstantsHelper();
+		util = new UtilHelper();
 	}
 
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
-		showMessage(true, this.constants.PROGRAM_TITLE, "Bem-vindo \n\n 1) Abra a janela do Tibia. \n 2) Abra o Market. \n 3) Aperte OK. \n\n");
+		showMessage("Bem-vindo \n\n 1) Abra a janela do Tibia. \n 2) Abra a janela do Market. \n 3) Aperte OK. \n\n");
 
-		this.items = xml.getItemsList();
+		items = xml.getItemsList();
 
-		delay(500);
-
-		this.mouse.clickOnAnonymous();
-
-		delay(500);
-
-		this.mouse.clickOnBuyButton();
-
-		delay(500);
-
-		for (int i = 0; i < this.items.size(); i++) {
-			startShopping(this.items.get(i));
-
-			delay(2000);
+		boolean firstItemFlag = true;
+		for (int i = 0; i < items.size(); i++) {
+			String isMarketOpened = util.normalizeId(image.getTextFromImage(constants.MARKET_TITLE_X_TOP, constants.MARKET_TITLE_Y_TOP, constants.MARKET_TITLE_X_BOTTOM, constants.MARKET_TITLE_Y_BOTTOM));
+			
+			if (isMarketOpened.equals("Market")) {
+				if (firstItemFlag) {
+					mouse.clickOnAnonymous();
+					mouse.clickOnBuyButton();
+					
+					firstItemFlag = false;
+				}
+				
+				startShopping(items.get(i));
+			} else {
+				showMessage("A janela do Market está fechada.");
+				i--;
+			}
 		}
 
-		this.mouse.clickOnCloseMarket();
+		mouse.clickOnCloseMarket();
 	}	
 
 	private void startShopping(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
-		this.mouse.clickOnSearchBox();
+		mouse.clickOnSearchBox();
 
 		delay(500);
 
-		this.keyboard.selectAllTextAndDelete();
+		keyboard.selectAllTextAndDelete();
 
 		delay(1000);
 
-		this.keyboard.type(item.getName());
+		keyboard.type(item.getName());
 
 		delay(500);
 
-		this.mouse.clickOnFirstFound();
+		mouse.clickOnFirstFound();
 
 		delay(2500);
 
-		String id = util.normalizeId(this.image.getTextFromImage(
-				this.constants.FIRST_SELLER_END_AT_X_TOP,
-				this.constants.FIRST_SELLER_END_AT_Y_TOP,
-				this.constants.FIRST_SELLER_END_AT_X_BOTTOM,
-				this.constants.FIRST_SELLER_END_AT_Y_BOTTOM));
+		String id = util.normalizeId(image.getTextFromImage(
+				constants.FIRST_SELLER_END_AT_X_TOP,
+				constants.FIRST_SELLER_END_AT_Y_TOP,
+				constants.FIRST_SELLER_END_AT_X_BOTTOM,
+				constants.FIRST_SELLER_END_AT_Y_BOTTOM));
 
 		if (id.equals(item.getId())) {
 			/**
@@ -95,36 +98,36 @@ public class Facade {
 			if (id.equals("")) {
 				int firstOffer = Math.round((item.getPrice() / 2));
 
-				this.mouse.clickOnPiecePriceBox();
+				mouse.clickOnPiecePriceBox();
 
 				delay(500);
 
-				this.keyboard.selectAllTextAndDelete();
+				keyboard.selectAllTextAndDelete();
 
 				delay(1000);
 
-				this.keyboard.type(String.valueOf(firstOffer));
+				keyboard.type(String.valueOf(firstOffer));
 
 				delay(500);
 
 				for (int i = 1; i < item.getBuy(); i++) {
-					this.mouse.clickOnIncreaseItemQuantity();
+					mouse.clickOnIncreaseItemQuantity();
 					delay(150);
 				}
 
-				this.mouse.clickOnCreateOffer();
+				mouse.clickOnCreateOffer();
 
 				delay(1500);
 
-				String createdId = util.normalizeId(this.image.getTextFromImage(
-						this.constants.FIRST_SELLER_END_AT_X_TOP,
-						this.constants.FIRST_SELLER_END_AT_Y_TOP,
-						this.constants.FIRST_SELLER_END_AT_X_BOTTOM,
-						this.constants.FIRST_SELLER_END_AT_Y_BOTTOM));
+				String createdId = util.normalizeId(image.getTextFromImage(
+						constants.FIRST_SELLER_END_AT_X_TOP,
+						constants.FIRST_SELLER_END_AT_Y_TOP,
+						constants.FIRST_SELLER_END_AT_X_BOTTOM,
+						constants.FIRST_SELLER_END_AT_Y_BOTTOM));
 
 				delay(1000);
 
-				this.xml.updateItemId(createdId, item.getName());
+				xml.updateItemId(createdId, item.getName());
 
 				System.out.println("Primeiro ao comprar " + item.getName() + " por: " + firstOffer);
 			} else {
@@ -137,11 +140,11 @@ public class Facade {
 				
 				for (int f = 0; f < constants.NUMBER_OF_OFFERS_TO_CHECK; f++) {
 					if (!foundObsoleteOfferId) {
-						String currentRowId = util.normalizeId(this.image.getTextFromImage(
-							this.constants.FIRST_SELLER_END_AT_X_TOP,
-							this.constants.FIRST_SELLER_END_AT_Y_TOP,
-							this.constants.FIRST_SELLER_END_AT_X_BOTTOM,
-							this.constants.FIRST_SELLER_END_AT_Y_BOTTOM,
+						String currentRowId = util.normalizeId(image.getTextFromImage(
+							constants.FIRST_SELLER_END_AT_X_TOP,
+							constants.FIRST_SELLER_END_AT_Y_TOP,
+							constants.FIRST_SELLER_END_AT_X_BOTTOM,
+							constants.FIRST_SELLER_END_AT_Y_BOTTOM,
 							f));
 						
 						if (!currentRowId.equals("")) {
@@ -154,11 +157,11 @@ public class Facade {
 								
 								delay(2000);
 								
-								int totalOfBuyOffers = Integer.parseInt(util.normalizeId(this.image.getTextFromImage(
-										this.constants.NUMBER_OF_BUY_OFFERS_X_TOP,
-										this.constants.NUMBER_OF_BUY_OFFERS_Y_TOP,
-										this.constants.NUMBER_OF_BUY_OFFERS_X_BOTTOM,
-										this.constants.NUMBER_OF_BUY_OFFERS_Y_BOTTOM)));
+								int totalOfBuyOffers = Integer.parseInt(util.normalizeId(image.getTextFromImage(
+										constants.NUMBER_OF_BUY_OFFERS_X_TOP,
+										constants.NUMBER_OF_BUY_OFFERS_Y_TOP,
+										constants.NUMBER_OF_BUY_OFFERS_X_BOTTOM,
+										constants.NUMBER_OF_BUY_OFFERS_Y_BOTTOM)));
 								
 								int numberOfHiddenBuyOffers = totalOfBuyOffers - constants.NUMBER_OF_VISIBLE_BUY_OFFERS;
 								
@@ -167,11 +170,11 @@ public class Facade {
 								String currentBuyOfferId;
 								for (int g = 0; g < constants.NUMBER_OF_VISIBLE_BUY_OFFERS; g++) {
 									if (!foundObsoleteOfferRow) {
-										currentBuyOfferId = util.normalizeId(this.image.getTextFromImage(
-											this.constants.FIRST_BUY_OFFER_END_AT_X_TOP,
-											this.constants.FIRST_BUY_OFFER_END_AT_Y_TOP,
-											this.constants.FIRST_BUY_OFFER_END_AT_X_BOTTOM,
-											this.constants.FIRST_BUY_OFFER_END_AT_Y_BOTTOM,
+										currentBuyOfferId = util.normalizeId(image.getTextFromImage(
+											constants.FIRST_BUY_OFFER_END_AT_X_TOP,
+											constants.FIRST_BUY_OFFER_END_AT_Y_TOP,
+											constants.FIRST_BUY_OFFER_END_AT_X_BOTTOM,
+											constants.FIRST_BUY_OFFER_END_AT_Y_BOTTOM,
 											g));
 										
 										if (item.getId().equals(currentBuyOfferId)) {
@@ -200,11 +203,11 @@ public class Facade {
 								
 								if (!foundObsoleteOfferRow) {
 									for (int h = 0; h < (numberOfHiddenBuyOffers + 1); h++) {
-										currentBuyOfferId = util.normalizeId(this.image.getTextFromImage(
-											this.constants.LAST_BUY_OFFER_END_AT_X_TOP,
-											this.constants.LAST_BUY_OFFER_END_AT_Y_TOP,
-											this.constants.LAST_BUY_OFFER_END_AT_X_BOTTOM,
-											this.constants.LAST_BUY_OFFER_END_AT_Y_BOTTOM));
+										currentBuyOfferId = util.normalizeId(image.getTextFromImage(
+											constants.LAST_BUY_OFFER_END_AT_X_TOP,
+											constants.LAST_BUY_OFFER_END_AT_Y_TOP,
+											constants.LAST_BUY_OFFER_END_AT_X_BOTTOM,
+											constants.LAST_BUY_OFFER_END_AT_Y_BOTTOM));
 										
 										if (item.getId().equals(currentBuyOfferId)) {
 											delay(1000);
@@ -238,11 +241,11 @@ public class Facade {
 				/**
 				 * Iniciar o processo de compra
 				 */
-				int price = Integer.parseInt(util.normalizePrice(this.image.getTextFromImage(
-					this.constants.PIECE_PRICE_X_TOP,
-					this.constants.PIECE_PRICE_Y_TOP,
-					this.constants.PIECE_PRICE_X_BOTTOM,
-					this.constants.PIECE_PRICE_Y_BOTTOM)));
+				int price = Integer.parseInt(util.normalizePrice(image.getTextFromImage(
+					constants.PIECE_PRICE_X_TOP,
+					constants.PIECE_PRICE_Y_TOP,
+					constants.PIECE_PRICE_X_BOTTOM,
+					constants.PIECE_PRICE_Y_BOTTOM)));
 
 				price = (price + 1);
 
@@ -250,11 +253,11 @@ public class Facade {
 				 * Se o maior preço ofertado for menor que o preço do item:
 				 */
 				if (price < item.getPrice()) {
-					this.mouse.clickOnPiecePriceBox();
+					mouse.clickOnPiecePriceBox();
 
 					delay(500);
 
-					this.keyboard.selectAllTextAndDelete();
+					keyboard.selectAllTextAndDelete();
 
 					delay(1000);
 
@@ -263,23 +266,23 @@ public class Facade {
 					delay(500);
 
 					for (int i = 1; i < item.getBuy(); i++) {
-						this.mouse.clickOnIncreaseItemQuantity();
+						mouse.clickOnIncreaseItemQuantity();
 						delay(150);
 					}
 
-					this.mouse.clickOnCreateOffer();
+					mouse.clickOnCreateOffer();
 
 					delay(1500);
 
-					String createdId = util.normalizeId(this.image.getTextFromImage(
-							this.constants.FIRST_SELLER_END_AT_X_TOP,
-							this.constants.FIRST_SELLER_END_AT_Y_TOP,
-							this.constants.FIRST_SELLER_END_AT_X_BOTTOM,
-							this.constants.FIRST_SELLER_END_AT_Y_BOTTOM));
+					String createdId = util.normalizeId(image.getTextFromImage(
+							constants.FIRST_SELLER_END_AT_X_TOP,
+							constants.FIRST_SELLER_END_AT_Y_TOP,
+							constants.FIRST_SELLER_END_AT_X_BOTTOM,
+							constants.FIRST_SELLER_END_AT_Y_BOTTOM));
 
 					delay(1000);
 
-					this.xml.updateItemId(createdId, item.getName());
+					xml.updateItemId(createdId, item.getName());
 
 					System.out.println("Comprando " + item.getName() + " por: " + price + " gps.");
 				} else {
@@ -287,18 +290,21 @@ public class Facade {
 				}
 			}
 		}
+		
+		delay(2000);
 	}
 
 	private void delay(int milliseconds) throws InterruptedException {
 		Thread.sleep(milliseconds);
 	}
 
-	private void showMessage(boolean alwaysOnTop, String title, String message) {
+	private void showMessage(String message) {
 		JOptionPane jOptionPane = new JOptionPane();
 		jOptionPane.setMessage(message);
+		
 		JDialog dialog = jOptionPane.createDialog(null);
-		dialog.setTitle(title);
-		dialog.setAlwaysOnTop(alwaysOnTop);  
+		dialog.setTitle(constants.PROGRAM_TITLE);
+		dialog.setAlwaysOnTop(true);  
 		dialog.setVisible(true);
 	}
 }
