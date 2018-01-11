@@ -4,6 +4,8 @@ public class ConstantsHelper {
 	/**
 	 * Não Alterar \/
 	 */
+	public final String PROGRAM_TITLE = "MarketMaker 1.0";
+	
 	public final int NUMBER_OF_OFFERS_TO_CHECK = 7;
 	
 	public final int NUMBER_OF_VISIBLE_BUY_OFFERS = 11;
@@ -14,6 +16,11 @@ public class ConstantsHelper {
 	/**
 	 * Dell
 	 */
+	public final int MARKET_TITLE_X_TOP = 933;
+	public final int MARKET_TITLE_Y_TOP = 184;
+	public final int MARKET_TITLE_X_BOTTOM = 981;
+	public final int MARKET_TITLE_Y_BOTTOM = 196;
+	
 	public final int MY_OFFERS_X = 1195;
 	public final int MY_OFFERS_Y = 698;
 	
@@ -81,7 +88,10 @@ public class ConstantsHelper {
 	/**
 	 * MacBook
 	 */
-	/*public final int MY_OFFERS_X = 0;
+	/*public final int MARKET_TITLE_X = 0;
+	public final int MARKET_TITLE_Y = 0;
+	
+	public final int MY_OFFERS_X = 0;
 	public final int MY_OFFERS_Y = 0;
 	
 	public final int CANCEL_OFFER_X = 0;
