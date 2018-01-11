@@ -31,6 +31,30 @@ public class MouseHelper {
 	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
 	}
 	
+	public void clickOnMyOffers() throws AWTException {
+		this.robot.mouseMove(this.constantsHelper.MY_OFFERS_X, this.constantsHelper.MY_OFFERS_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
+	public void clickOnCancelOffer() throws AWTException {
+		this.robot.mouseMove(this.constantsHelper.CANCEL_OFFER_X, this.constantsHelper.CANCEL_OFFER_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
+	public void clickOnBackToMarket() throws AWTException {
+		this.robot.mouseMove(this.constantsHelper.BACK_TO_MARKET_X, this.constantsHelper.BACK_TO_MARKET_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
+	public void clickOnFirstBuyOffer() throws AWTException {
+		this.robot.mouseMove(this.constantsHelper.FIRST_BUY_OFFER_X, this.constantsHelper.FIRST_BUY_OFFER_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
 	public void clickOnSearchBox() throws AWTException {
 		this.robot.mouseMove(this.constantsHelper.SEARCH_BOX_X, this.constantsHelper.SEARCH_BOX_Y);    
 	    this.robot.mousePress(InputEvent.BUTTON1_MASK);

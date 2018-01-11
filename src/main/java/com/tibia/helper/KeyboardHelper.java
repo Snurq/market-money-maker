@@ -110,6 +110,8 @@ public class KeyboardHelper {
     		return KeyEvent.VK_SPACE;
     	else if (c == '-')
     		return KeyEvent.VK_MINUS;
+    	else if (c == 'ˇ')
+    		return KeyEvent.VK_DOWN;
     	else
     		return 0;
     }

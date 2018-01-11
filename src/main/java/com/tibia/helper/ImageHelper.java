@@ -38,6 +38,23 @@ public class ImageHelper {
     	return this.ocrHelper.getTextFromImage(SAMPLE_IMAGE_PATH);
 	}
 	
+	public String getTextFromImage(int topX, int topY, int bottomX, int bottomY, int currentRow) throws IOException, TesseractException {
+		Rectangle rectArea;
+		int rateToResizeImage = 10;
+		int[] rectangleSize = getSizeFromTwoPoints(topX, topY, bottomX, bottomY);
+		
+		if (currentRow == 0) {
+			rectArea = new Rectangle(topX, topY, rectangleSize[0], rectangleSize[1]);
+		} else {
+			rectArea = new Rectangle(topX, topY + (rectangleSize[1] * currentRow), rectangleSize[0], rectangleSize[1]);
+		}
+    	
+        BufferedImage screenFullImage = resize(this.robot.createScreenCapture(rectArea), rectangleSize[0] * rateToResizeImage, rectangleSize[1] * rateToResizeImage);
+        ImageIO.write(screenFullImage, "png", new File(SAMPLE_IMAGE_PATH));
+    	
+    	return this.ocrHelper.getTextFromImage(SAMPLE_IMAGE_PATH);
+	}
+	
 	private int[] getSizeFromTwoPoints(int topX, int topY, int bottomX, int bottomY) {
 		int[] size = new int[2];
 		
