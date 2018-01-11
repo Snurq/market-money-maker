@@ -20,4 +20,15 @@ public class UtilHelper {
 				.replaceAll("l", "1")
 				.replaceAll("O", "0");
 	}
+
+	public String normalizeFps(String fps) {
+		return fps
+				.trim()
+				.replaceAll(" ", "")
+				.replaceAll(",", "")
+				.replaceAll("l", "1")
+				.replaceAll("O", "0")
+				.replaceAll("fps", "")
+				.substring(0, fps.lastIndexOf("."));
+	}
 }

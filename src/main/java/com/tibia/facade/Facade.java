@@ -38,19 +38,21 @@ public class Facade {
 
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
 		showMessage("Bem-vindo \n\n 1) Abra a janela do Tibia. \n 2) Abra a janela do Market. \n 3) Aperte OK. \n\n");
+		
+		//int currentFps = Integer.parseInt(util.normalizeFps(image.getTextFromImage(constants.FPS_X_TOP, constants.FPS_Y_TOP, constants.FPS_X_BOTTOM, constants.FPS_Y_BOTTOM)));
 
 		items = xml.getItemsList();
 
-		boolean firstItemFlag = true;
+		boolean isTheFirstNegotiation = true;
 		for (int i = 0; i < items.size(); i++) {
 			String isMarketOpened = util.normalizeId(image.getTextFromImage(constants.MARKET_TITLE_X_TOP, constants.MARKET_TITLE_Y_TOP, constants.MARKET_TITLE_X_BOTTOM, constants.MARKET_TITLE_Y_BOTTOM));
 			
 			if (isMarketOpened.equals("Market")) {
-				if (firstItemFlag) {
+				if (isTheFirstNegotiation) {
 					mouse.clickOnAnonymous();
 					mouse.clickOnBuyButton();
 					
-					firstItemFlag = false;
+					isTheFirstNegotiation = false;
 				}
 				
 				startShopping(items.get(i));

@@ -16,11 +16,6 @@ public class ConstantsHelper {
 	/**
 	 * Dell
 	 */
-	public final int MARKET_TITLE_X_TOP = 933;
-	public final int MARKET_TITLE_Y_TOP = 184;
-	public final int MARKET_TITLE_X_BOTTOM = 981;
-	public final int MARKET_TITLE_Y_BOTTOM = 196;
-	
 	public final int MY_OFFERS_X = 1195;
 	public final int MY_OFFERS_Y = 698;
 	
@@ -84,6 +79,16 @@ public class ConstantsHelper {
 	public final int NUMBER_OF_BUY_OFFERS_Y_TOP = 450;
 	public final int NUMBER_OF_BUY_OFFERS_X_BOTTOM = 693;
 	public final int NUMBER_OF_BUY_OFFERS_Y_BOTTOM = 461;
+	
+	public final int MARKET_TITLE_X_TOP = 933;
+	public final int MARKET_TITLE_Y_TOP = 184;
+	public final int MARKET_TITLE_X_BOTTOM = 981;
+	public final int MARKET_TITLE_Y_BOTTOM = 196;
+	
+	public final int FPS_X_TOP = 29;
+	public final int FPS_Y_TOP = 43;
+	public final int FPS_X_BOTTOM = 125;
+	public final int FPS_Y_BOTTOM = 58;
 	
 	/**
 	 * MacBook
@@ -153,5 +158,10 @@ public class ConstantsHelper {
 	public final int NUMBER_OF_BUY_OFFERS_X_TOP = 0;
 	public final int NUMBER_OF_BUY_OFFERS_Y_TOP = 0;
 	public final int NUMBER_OF_BUY_OFFERS_X_BOTTOM = 0;
-	public final int NUMBER_OF_BUY_OFFERS_Y_BOTTOM = 0;*/
+	public final int NUMBER_OF_BUY_OFFERS_Y_BOTTOM = 0;
+	
+	public final int MARKET_TITLE_X_TOP = 0;
+	public final int MARKET_TITLE_Y_TOP = 0;
+	public final int MARKET_TITLE_X_BOTTOM = 0;
+	public final int MARKET_TITLE_Y_BOTTOM = 0;*/
 }
