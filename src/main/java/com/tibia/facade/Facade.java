@@ -8,6 +8,7 @@ import com.tibia.helper.ConstantsHelper;
 import com.tibia.helper.ImageHelper;
 import com.tibia.helper.KeyboardHelper;
 import com.tibia.helper.MouseHelper;
+import com.tibia.helper.UtilHelper;
 import com.tibia.helper.XMLHelper;
 import com.tibia.model.Item;
 
@@ -19,6 +20,7 @@ public class Facade {
 	private KeyboardHelper keyboardHelper;
 	private XMLHelper xmlHelper;
 	private ConstantsHelper constantsHelper;
+	private UtilHelper util;
 
 	private List<Item> items;
 
@@ -28,6 +30,7 @@ public class Facade {
 		this.keyboardHelper = new KeyboardHelper();
 		this.xmlHelper = new XMLHelper();
 		this.constantsHelper = new ConstantsHelper();
+		this.util = new UtilHelper();
 	}
 
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
@@ -71,18 +74,11 @@ public class Facade {
 
 		delay(2500);
 
-		String id = this.imageHelper.getTextFromImage(
+		String id = util.normalizeId(this.imageHelper.getTextFromImage(
 				this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
 				this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
 				this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-				this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
-				.trim()
-				.replaceAll(" ", "")
-				.replaceAll(",", ", ")
-				.replaceAll("l", "1")
-				.replaceAll("S", "5")
-				.replaceAll("z", ":")
-				.replaceAll("O", "0");
+				this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM));
 
 		if (id.equals(item.getId())) {
 			/**
@@ -117,18 +113,11 @@ public class Facade {
 
 				delay(1500);
 
-				String createdId = this.imageHelper.getTextFromImage(
+				String createdId = util.normalizeId(this.imageHelper.getTextFromImage(
 						this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
 						this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
 						this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-						this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
-						.trim()
-						.replaceAll(" ", "")
-						.replaceAll(",", ", ")
-						.replaceAll("l", "1")
-						.replaceAll("S", "5")
-						.replaceAll("z", ":")
-						.replaceAll("O", "0");
+						this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM));
 
 				delay(1000);
 
@@ -145,19 +134,12 @@ public class Facade {
 				
 				for (int f = 0; f < constantsHelper.NUMBER_OF_OFFERS_TO_CHECK; f++) {
 					if (!foundObsoleteOfferId) {
-						String currentRowId = this.imageHelper.getTextFromImage(
+						String currentRowId = util.normalizeId(this.imageHelper.getTextFromImage(
 							this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
 							this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
 							this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
 							this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM,
-							f)
-							.trim()
-							.replaceAll(" ", "")
-							.replaceAll(",", ", ")
-							.replaceAll("l", "1")
-							.replaceAll("S", "5")
-							.replaceAll("z", ":")
-							.replaceAll("O", "0");
+							f));
 						
 						if (!currentRowId.equals("")) {
 							if (item.getId().equals(currentRowId)) {
@@ -169,18 +151,11 @@ public class Facade {
 								
 								delay(2000);
 								
-								int totalOfBuyOffers = Integer.parseInt(this.imageHelper.getTextFromImage(
+								int totalOfBuyOffers = Integer.parseInt(util.normalizeId(this.imageHelper.getTextFromImage(
 										this.constantsHelper.NUMBER_OF_BUY_OFFERS_X_TOP,
 										this.constantsHelper.NUMBER_OF_BUY_OFFERS_Y_TOP,
 										this.constantsHelper.NUMBER_OF_BUY_OFFERS_X_BOTTOM,
-										this.constantsHelper.NUMBER_OF_BUY_OFFERS_Y_BOTTOM)
-										.trim()
-										.replaceAll(" ", "")
-										.replaceAll(",", ", ")
-										.replaceAll("l", "1")
-										.replaceAll("S", "5")
-										.replaceAll("z", ":")
-										.replaceAll("O", "0"));
+										this.constantsHelper.NUMBER_OF_BUY_OFFERS_Y_BOTTOM)));
 								
 								int numberOfHiddenBuyOffers = totalOfBuyOffers - constantsHelper.NUMBER_OF_VISIBLE_BUY_OFFERS;
 								
@@ -189,19 +164,12 @@ public class Facade {
 								String currentBuyOfferId;
 								for (int g = 0; g < constantsHelper.NUMBER_OF_VISIBLE_BUY_OFFERS; g++) {
 									if (!foundObsoleteOfferRow) {
-										currentBuyOfferId = this.imageHelper.getTextFromImage(
+										currentBuyOfferId = util.normalizeId(this.imageHelper.getTextFromImage(
 											this.constantsHelper.FIRST_BUY_OFFER_END_AT_X_TOP,
 											this.constantsHelper.FIRST_BUY_OFFER_END_AT_Y_TOP,
 											this.constantsHelper.FIRST_BUY_OFFER_END_AT_X_BOTTOM,
 											this.constantsHelper.FIRST_BUY_OFFER_END_AT_Y_BOTTOM,
-											g)
-											.trim()
-											.replaceAll(" ", "")
-											.replaceAll(",", ", ")
-											.replaceAll("l", "1")
-											.replaceAll("S", "5")
-											.replaceAll("z", ":")
-											.replaceAll("O", "0");
+											g));
 										
 										if (item.getId().equals(currentBuyOfferId)) {
 											delay(1000);
@@ -229,18 +197,11 @@ public class Facade {
 								
 								if (!foundObsoleteOfferRow) {
 									for (int h = 0; h < (numberOfHiddenBuyOffers + 1); h++) {
-										currentBuyOfferId = this.imageHelper.getTextFromImage(
+										currentBuyOfferId = util.normalizeId(this.imageHelper.getTextFromImage(
 											this.constantsHelper.LAST_BUY_OFFER_END_AT_X_TOP,
 											this.constantsHelper.LAST_BUY_OFFER_END_AT_Y_TOP,
 											this.constantsHelper.LAST_BUY_OFFER_END_AT_X_BOTTOM,
-											this.constantsHelper.LAST_BUY_OFFER_END_AT_Y_BOTTOM)
-											.trim()
-											.replaceAll(" ", "")
-											.replaceAll(",", ", ")
-											.replaceAll("l", "1")
-											.replaceAll("S", "5")
-											.replaceAll("z", ":")
-											.replaceAll("O", "0");
+											this.constantsHelper.LAST_BUY_OFFER_END_AT_Y_BOTTOM));
 										
 										if (item.getId().equals(currentBuyOfferId)) {
 											delay(1000);
@@ -274,16 +235,11 @@ public class Facade {
 				/**
 				 * Iniciar o processo de compra
 				 */
-				int price = Integer.parseInt(this.imageHelper.getTextFromImage(
+				int price = Integer.parseInt(util.normalizePrice(this.imageHelper.getTextFromImage(
 					this.constantsHelper.PIECE_PRICE_X_TOP,
 					this.constantsHelper.PIECE_PRICE_Y_TOP,
 					this.constantsHelper.PIECE_PRICE_X_BOTTOM,
-					this.constantsHelper.PIECE_PRICE_Y_BOTTOM)
-					.trim()
-					.replaceAll(" ", "")
-					.replaceAll(",", "")
-					.replaceAll("l", "1")
-					.replaceAll("O", "0"));
+					this.constantsHelper.PIECE_PRICE_Y_BOTTOM)));
 
 				price = (price + 1);
 
@@ -312,18 +268,11 @@ public class Facade {
 
 					delay(1500);
 
-					String createdId = this.imageHelper.getTextFromImage(
+					String createdId = util.normalizeId(this.imageHelper.getTextFromImage(
 							this.constantsHelper.FIRST_SELLER_END_AT_X_TOP,
 							this.constantsHelper.FIRST_SELLER_END_AT_Y_TOP,
 							this.constantsHelper.FIRST_SELLER_END_AT_X_BOTTOM,
-							this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM)
-							.trim()
-							.replaceAll(" ", "")
-							.replaceAll(",", ", ")
-							.replaceAll("l", "1")
-							.replaceAll("S", "5")
-							.replaceAll("z", ":")
-							.replaceAll("O", "0");
+							this.constantsHelper.FIRST_SELLER_END_AT_Y_BOTTOM));
 
 					delay(1000);
 
