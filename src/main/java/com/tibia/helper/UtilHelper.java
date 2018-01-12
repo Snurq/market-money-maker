@@ -1,5 +1,7 @@
 package com.tibia.helper;
 
+import java.util.regex.Pattern;
+
 public class UtilHelper {
 	public String normalizeId(String id) {
 		return id
@@ -21,14 +23,27 @@ public class UtilHelper {
 				.replaceAll("O", "0");
 	}
 
-	public String normalizeFps(String fps) {
-		return fps
-				.trim()
-				.replaceAll(" ", "")
-				.replaceAll(",", "")
-				.replaceAll("l", "1")
-				.replaceAll("O", "0")
-				.replaceAll("fps", "")
-				.substring(0, fps.lastIndexOf("."));
+	public String normalizePing(String ping) {
+		ping = ping
+			.trim()
+			.replaceAll(Pattern.quote("Low lag "), "")
+			.replaceAll(Pattern.quote("Medium lag "), "")
+			.replaceAll(Pattern.quote("High lag "), "")
+			.replaceAll(Pattern.quote("Measuring lag... "), "")
+			.replaceAll(" ", "")
+			.replaceAll("l", "1")
+			.replaceAll("O", "0")
+			.replaceAll("ms", "")
+			.replaceAll(Pattern.quote(","), "")
+			.replaceAll(Pattern.quote("("), "")
+			.replaceAll(Pattern.quote(")"), "");
+		
+		try {
+			Integer.parseInt(ping);
+			
+			return ping;
+		} catch (Exception e) {
+			return "0";
+		}
 	}
 }

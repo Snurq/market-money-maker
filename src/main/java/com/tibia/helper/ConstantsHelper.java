@@ -5,9 +5,8 @@ public class ConstantsHelper {
 	 * Não Alterar \/
 	 */
 	public final String PROGRAM_TITLE = "MarketMaker 1.0 by Dhuy";
-	
+	public final int MAX_ACCEPTED_LATENCY = 500;
 	public final int NUMBER_OF_OFFERS_TO_CHECK = 7;
-	
 	public final int NUMBER_OF_VISIBLE_BUY_OFFERS = 11;
 	/**
 	 * Não Alterar /\
@@ -85,10 +84,10 @@ public class ConstantsHelper {
 	public final int MARKET_TITLE_X_BOTTOM = 981;
 	public final int MARKET_TITLE_Y_BOTTOM = 196;
 	
-	public final int FPS_X_TOP = 29;
-	public final int FPS_Y_TOP = 43;
-	public final int FPS_X_BOTTOM = 125;
-	public final int FPS_Y_BOTTOM = 58;
+	public final int PING_X_TOP = 29;
+	public final int PING_Y_TOP = 28;
+	public final int PING_X_BOTTOM = 218;
+	public final int PING_Y_BOTTOM = 43;
 	
 	/**
 	 * MacBook

@@ -37,9 +37,9 @@ public class Facade {
 	}
 
 	public void run() throws InterruptedException, AWTException, IOException, TesseractException {
-		showMessage("Bem-vindo \n\n 1) Abra a janela do Tibia. \n 2) Abra a janela do Market. \n 3) Aperte OK. \n\n");
+		showMessage("Bem-vindo \n\n 1) Abra a janela do Tibia. \n 2) Aperte Alt + F8 para verificação de latência. \n 3) Abra a janela do Market. \n 4) Aperte OK. \n\n");
 		
-		//int currentFps = Integer.parseInt(util.normalizeFps(image.getTextFromImage(constants.FPS_X_TOP, constants.FPS_Y_TOP, constants.FPS_X_BOTTOM, constants.FPS_Y_BOTTOM)));
+		int currentPing = Integer.parseInt(util.normalizePing(image.getTextFromImage(constants.PING_X_TOP, constants.PING_Y_TOP, constants.PING_X_BOTTOM, constants.PING_Y_BOTTOM)));
 
 		items = xml.getItemsList();
 
@@ -47,20 +47,28 @@ public class Facade {
 		for (int i = 0; i < items.size(); i++) {
 			String isMarketOpened = util.normalizeId(image.getTextFromImage(constants.MARKET_TITLE_X_TOP, constants.MARKET_TITLE_Y_TOP, constants.MARKET_TITLE_X_BOTTOM, constants.MARKET_TITLE_Y_BOTTOM));
 			
-			if (isMarketOpened.equals("Market")) {
-				if (isTheFirstNegotiation) {
-					mouse.clickOnAnonymous();
-					mouse.clickOnBuyButton();
-					
-					isTheFirstNegotiation = false;
-				}
-				
-				startShopping(items.get(i));
-			} else {
+			if (!isMarketOpened.equals("Market")) {
 				isTheFirstNegotiation = true;
 				showMessage("A janela do Market está fechada.");
 				i--;
+				continue;
 			}
+			
+			if (currentPing > constants.MAX_ACCEPTED_LATENCY) {
+				isTheFirstNegotiation = true;
+				showMessage("Seu ping está muito alto para rodar o MarketMaker.");
+				i--;
+				continue;
+			}
+
+			if (isTheFirstNegotiation) {
+				mouse.clickOnAnonymous();
+				mouse.clickOnBuyButton();
+				
+				isTheFirstNegotiation = false;
+			}
+			
+			//startShopping(items.get(i));
 		}
 
 		mouse.clickOnCloseMarket();
