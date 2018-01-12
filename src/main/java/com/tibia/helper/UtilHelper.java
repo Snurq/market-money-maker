@@ -3,6 +3,17 @@ package com.tibia.helper;
 import java.util.regex.Pattern;
 
 public class UtilHelper {
+	public String normalizeNumber(String number) {
+		return number
+				.trim()
+				.replaceAll(" ", "")
+				.replaceAll(",", ", ")
+				.replaceAll("l", "1")
+				.replaceAll("S", "5")
+				.replaceAll("z", ":")
+				.replaceAll("O", "0");
+	}
+	
 	public String normalizeId(String id) {
 		return id
 				.trim()

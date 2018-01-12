@@ -72,10 +72,10 @@
 		<id>0</id><name>Deeptags</name><price>290</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Dragon Priest's Wandtip</name><price>175</price><buy>0</buy>
+		<id>0</id><name>Dragon Priest</name><price>175</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Dragon's Tail</name><price>100</price><buy>0</buy>
+		<id>0</id><name>s Tail</name><price>100</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Draken Sulphur</name><price>550</price><buy>0</buy>
@@ -99,16 +99,10 @@
 		<id>0</id><name>Fish Fin</name><price>150</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Flask of Warrior's Sweat</name><price>10000</price><buy>0</buy>
-	</Item>
-	<Item>
 		<id>0</id><name>Frosty Heart</name><price>280</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Gauze Bandage</name><price>90</price><buy>0</buy>
-	</Item>
-	<Item>
-		<id>0</id><name>Geomancer's Staff</name><price>120</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Giant Eye</name><price>380</price><buy>0</buy>
@@ -150,13 +144,7 @@
 		<id>0</id><name>Lizard Scale</name><price>120</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Lost Basher's Spike</name><price>280</price><buy>0</buy>
-	</Item>
-	<Item>
 		<id>0</id><name>Lost Bracers</name><price>140</price><buy>0</buy>
-	</Item>
-	<Item>
-		<id>0</id><name>Lost Husher's Staff</name><price>250</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Luminous Orb</name><price>1000</price><buy>0</buy>
@@ -210,9 +198,6 @@
 		<id>0</id><name>Spirit Container</name><price>40000</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Spellsinger's Seal</name><price>280</price><buy>0</buy>
-	</Item>
-	<Item>
 		<id>0</id><name>Spooky Blue Eye</name><price>95</price><buy>0</buy>
 	</Item>
 	<Item>
@@ -226,9 +211,6 @@
 	</Item>
 	<Item>
 		<id>0</id><name>Vexclaw Talon</name><price>1100</price><buy>0</buy>
-	</Item>
-	<Item>
-		<id>0</id><name>Weaver's Wandtip</name><price>250</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Wimp Tooth Chain</name><price>120</price><buy>0</buy>

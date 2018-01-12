@@ -87,6 +87,65 @@ public class XMLHelper {
         }
 	}
 	
+	public void deleteItem(String itemName) {
+        File xmlFile = new File(ITEMS_LIST_XML_PATH);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder;
+        
+        try {
+            dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(xmlFile);
+            doc.getDocumentElement().normalize();
+
+            NodeList items = doc.getElementsByTagName("Item");
+            Element item = null;
+
+            for (int i = 0; i < items.getLength(); i++) {
+            	item = (Element) items.item(i);
+            	
+            	String name = item.getElementsByTagName("name").item(0).getFirstChild().getNodeValue();
+            	
+            	if (name.equals(itemName)) {
+            		item.getParentNode().removeChild(item);
+            	}
+            }
+            
+            doc.getDocumentElement().normalize();
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(new File(ITEMS_LIST_XML_PATH));
+            transformer.setOutputProperty(OutputKeys.INDENT, "no");
+            transformer.transform(source, result);
+            
+        } catch (SAXException | ParserConfigurationException | IOException | TransformerException e) {
+            e.printStackTrace();
+        }
+	}
+	
+	public int getLength() {
+        File xmlFile = new File(ITEMS_LIST_XML_PATH);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder;
+        
+        try {
+            dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(xmlFile);
+            doc.getDocumentElement().normalize();
+
+            NodeList items = doc.getElementsByTagName("Item");
+
+            int length = 0;
+            for (int i = 0; i < items.getLength(); i++) {
+            	length++;
+            }
+            
+            return length;
+        } catch (SAXException | ParserConfigurationException | IOException e) {
+            return 0;
+        }
+	}
+	
 	private Item getItem(Node node) {
         Item item = new Item();
         

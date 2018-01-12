@@ -37,6 +37,12 @@ public class MouseHelper {
 	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
 	}
 	
+	public void clickOnDetailsButton() throws AWTException {
+		this.robot.mouseMove(this.constantsHelper.DETAILS_BUTTON_X, this.constantsHelper.DETAILS_BUTTON_Y);    
+	    this.robot.mousePress(InputEvent.BUTTON1_MASK);
+	    this.robot.mouseRelease(InputEvent.BUTTON1_MASK);
+	}
+	
 	public void clickOnCancelOffer() throws AWTException {
 		this.robot.mouseMove(this.constantsHelper.CANCEL_OFFER_X, this.constantsHelper.CANCEL_OFFER_Y);    
 	    this.robot.mousePress(InputEvent.BUTTON1_MASK);

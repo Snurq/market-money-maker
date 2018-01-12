@@ -56,7 +56,7 @@ public class Facade {
 			
 			if (currentPing > constants.MAX_ACCEPTED_LATENCY) {
 				isTheFirstNegotiation = true;
-				showMessage("Seu ping está muito alto para rodar o MarketMaker.");
+				showMessage("Seu ping está muito alto para poder executar o MarketMaker.");
 				i--;
 				continue;
 			}
@@ -67,29 +67,70 @@ public class Facade {
 				
 				isTheFirstNegotiation = false;
 			}
-			
-			//startShopping(items.get(i));
+
+			buyItem(items.get(i));
 		}
 
 		mouse.clickOnCloseMarket();
 		System.exit(0);
-	}	
-
-	private void startShopping(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
+	}
+	
+	private void removeOverpricedItems(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
 		mouse.clickOnSearchBox();
-
 		delay(500);
-
 		keyboard.selectAllTextAndDelete();
-
 		delay(1000);
-
 		keyboard.type(item.getName());
-
 		delay(500);
-
 		mouse.clickOnFirstFound();
+		delay(1500);
 
+		String price = util.normalizePrice(image.getTextFromImage(
+			constants.PIECE_PRICE_X_TOP,
+			constants.PIECE_PRICE_Y_TOP,
+			constants.PIECE_PRICE_X_BOTTOM,
+			constants.PIECE_PRICE_Y_BOTTOM));
+		
+		if (!price.equals("")) {
+			if (Integer.parseInt(price) > item.getPrice()) {
+				System.out.println(item.getName() + " deletado.");
+				xml.deleteItem(item.getName());
+			}
+		}
+	}
+	
+	private void removeLowTransactionsItems(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
+		mouse.clickOnSearchBox();
+		delay(500);
+		keyboard.selectAllTextAndDelete();
+		delay(1000);
+		keyboard.type(item.getName());
+		delay(500);
+		mouse.clickOnFirstFound();
+		delay(1500);
+		
+		mouse.clickOnDetailsButton();
+		
+		int numberOfTransactions = Integer.parseInt(
+				util.normalizeNumber(image.getTextFromImage(
+				constants.NUMBER_TRANSACTIONS_X_TOP,
+				constants.NUMBER_TRANSACTIONS_Y_TOP,
+				constants.NUMBER_TRANSACTIONS_X_BOTTOM,
+				constants.NUMBER_TRANSACTIONS_Y_BOTTOM)));
+		
+		if (numberOfTransactions < constants.NUMBER_OF_TRANSACTIONS_REQUIRED) {
+			xml.deleteItem(item.getName());
+		}
+	}
+
+	private void buyItem(Item item) throws InterruptedException, AWTException, IOException, TesseractException {
+		mouse.clickOnSearchBox();
+		delay(500);
+		keyboard.selectAllTextAndDelete();
+		delay(1000);
+		keyboard.type(item.getName());
+		delay(500);
+		mouse.clickOnFirstFound();
 		delay(2500);
 
 		String id = util.normalizeId(image.getTextFromImage(

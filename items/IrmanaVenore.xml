@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Irmana">
 	<Item>
-		<id>0</id><name>Green Piece of Cloth</name><price>150Green Tunics </price><buy>0</buy>
-	</Item>
-	<Item>
-		<id>0</id><name>Red Piece of Cloth</name><price>1Red Robe </price><buy>0</buy>
-	</Item>
-	<Item>
 		<id>0</id><name>Ape Fur</name><price>120</price><buy>0</buy>
 	</Item>
 	<Item>
@@ -39,7 +33,7 @@
 		<id>0</id><name>Frost Giant Pelt</name><price>160</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Geomancer's Robe</name><price>80</price><buy>0</buy>
+		<id>0</id><name>s Robe</name><price>80</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Ghostly Tissue</name><price>90</price><buy>0</buy>
@@ -54,7 +48,7 @@
 		<id>0</id><name>Jewelled Belt</name><price>180</price><buy>0</buy>
 	</Item>
 	<Item>
-		<id>0</id><name>Lion's Mane</name><price>60</price><buy>0</buy>
+		<id>0</id><name>s Mane</name><price>60</price><buy>0</buy>
 	</Item>
 	<Item>
 		<id>0</id><name>Lizard Leather</name><price>150</price><buy>0</buy>

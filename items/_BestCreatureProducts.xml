@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items>
+	<Item>
+		<id>0</id><name>Damselfly Eye</name><price>25</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Damselfly Wing</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Essence of a Bad Dream</name><price>360</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Ghoul Snack</name><price>60</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Half-Digested Piece of Meat</name><price>55</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mutated Flesh</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mutated Rat Tail</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Necromantic Robe</name><price>250</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Swampling Wood</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Pile of Grave Earth</name><price>25</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Poisonous Slime</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Rotten Piece of Cloth</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Scale of Corruption</name><price>680</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Scorpion Tail</name><price>25</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Strand of Medusa Hair</name><price>600</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Swampling Moss</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Tarantula Egg</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Thorn</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Berserk Potion</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bola</name><price>35</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bony Tail</name><price>210</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Carrion Worm Fang</name><price>35</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cheese Cutter</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Demon Horn</name><price>1000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Demonic Skeletal Hand</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dragon Priest</name><price>175</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>s Tail</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Elder Bonelord Tentacle</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Elven Astral Observer</name><price>90</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Frosty Heart</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Gauze Bandage</name><price>90</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Green Dragon Scale</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Hardened Bone</name><price>70</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Hellspawn Tail</name><price>475</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Luminous Orb</name><price>1000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mastermind Potion</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mystical Hourglass</name><price>700</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Red Dragon Scale</name><price>200</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Scythe Leg</name><price>450</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Small Flask of Eyedrops</name><price>95</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Stone Wing</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Wyrm Scale</name><price>400</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Wyvern Talisman</name><price>265</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cheesy Figurine</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cyclops Toe</name><price>55</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cyclops Trophy</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Hydra Head</name><price>600</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mantassin Tail</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Marsh Stalker Beak</name><price>65</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Minotaur Trophy</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mutated Bat Ear</name><price>420</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Bone</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Eye</name><price>350</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Pincers</name><price>410</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Tentacle</name><price>140</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Rorc Feather</name><price>70</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Scarab Pincers</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Terramite Legs</name><price>60</price><buy>0</buy>
+	</Item>
+		<Item>
+		<id>0</id><name>Book of Necromantic Rituals</name><price>180</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cultish Mask</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cultish Robe</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dark Rosary</name><price>48</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Flask of Embalming Fluid</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Unholy Bone</name><price>480</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Witch Broom</name><price>60</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Broken Helmet</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orcish Gear</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orc Leather</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orc Tooth</name><price>45</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Shamanic Hood</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Brown Piece of Cloth</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bunch of Troll Hair</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dirty Turban</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Earflap</name><price>40</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Green Dragon Leather</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>s Mane</name><price>60</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lizard Leather</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Minotaur Leather</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Necromantic Robe</name><price>250</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Crocodile Leather</name><price>15</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Purple Robe</name><price>110</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Snake Skin</name><price>400</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Thick Fur</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Carniphila Seeds</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Green Mushroom</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lump of Dirt</name><price>10</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lump of Earth</name><price>130</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Broken Crossbow</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Minotaur Horn</name><price>75</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Archer Armor</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Warrior Armor</name><price>50</price><buy>0</buy>
+	</Item>
+</Items>

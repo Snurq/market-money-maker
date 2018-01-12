@@ -8,6 +8,7 @@ public class ConstantsHelper {
 	public final int MAX_ACCEPTED_LATENCY = 500;
 	public final int NUMBER_OF_OFFERS_TO_CHECK = 7;
 	public final int NUMBER_OF_VISIBLE_BUY_OFFERS = 11;
+	public final int NUMBER_OF_TRANSACTIONS_REQUIRED = 50;
 	/**
 	 * Não Alterar /\
 	 */
@@ -15,6 +16,9 @@ public class ConstantsHelper {
 	/**
 	 * Dell
 	 */
+	public final int DETAILS_BUTTON_X = 1120;
+	public final int DETAILS_BUTTON_Y = 698;
+	
 	public final int MY_OFFERS_X = 1195;
 	public final int MY_OFFERS_Y = 698;
 	
@@ -53,6 +57,11 @@ public class ConstantsHelper {
 	
 	public final int CREATE_OFFER_X = 1294;
 	public final int CREATE_OFFER_Y = 657;
+	
+	public final int NUMBER_TRANSACTIONS_X_TOP = 944;
+	public final int NUMBER_TRANSACTIONS_Y_TOP = 428;
+	public final int NUMBER_TRANSACTIONS_X_BOTTOM = 985;
+	public final int NUMBER_TRANSACTIONS_Y_BOTTOM = 441;
 	
 	public final int PIECE_PRICE_X_TOP = 960;
 	public final int PIECE_PRICE_Y_TOP = 447;
