@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Baxter">
+	<Item>
+		<id>0</id><name>Broken Helmet</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Broken Shamanic Staff</name><price>35</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orcish Gear</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orc Leather</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orc Tooth</name><price>45</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Shamanic Hood</name><price>80</price><buy>0</buy>
+	</Item>
+</Items>

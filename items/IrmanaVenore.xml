@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Irmana">
+	<Item>
+		<id>0</id><name>Green Piece of Cloth</name><price>150Green Tunics </price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Red Piece of Cloth</name><price>1Red Robe </price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Ape Fur</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Badger Fur</name><price>15</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Black Wool</name><price>300</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Blue Piece of Cloth</name><price>200</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Brown Piece of Cloth</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bunch of Troll Hair</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Deepling Guard Belt Buckle</name><price>230</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dirty Turban</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Downy Feather</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Earflap</name><price>40</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Frost Giant Pelt</name><price>160</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Geomancer's Robe</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Ghostly Tissue</name><price>90</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Green Dragon Leather</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Green Piece of Cloth</name><price>200</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Jewelled Belt</name><price>180</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lion's Mane</name><price>60</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lizard Leather</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Minotaur Leather</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Necromantic Robe</name><price>250</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Noble Turban</name><price>430</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Crocodile Leather</name><price>15</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Purple Robe</name><price>110</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Red Dragon Leather</name><price>200</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Red Piece of Cloth</name><price>300</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Rope Belt</name><price>66</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Royal Tapestry</name><price>1000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Safety Pin</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Shaggy Tail</name><price>25</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Silky Fur</name><price>35</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Simple Dress</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Skunk Tail</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Snake Skin</name><price>400</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Spool of Yarn</name><price>1000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Striped Fur</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Tattered Piece of Robe</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Thick Fur</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Velvet Tapestry</name><price>800</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Warwolf Fur</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Werewolf Fur</name><price>380</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>White Piece of Cloth</name><price>100</price><buy>0</buy>
+	</Item>
+</Items>

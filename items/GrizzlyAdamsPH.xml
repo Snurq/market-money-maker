@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="GrizzlyAdams">
+	<Item>
+		<id>0</id><name>Demon Backpack</name><price>1000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Antlers</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bloody Pincers</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cavebear Skull</name><price>550</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cheesy Figurine</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Colourful Feather</name><price>110</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Crab Pincers</name><price>35</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cyclops Toe</name><price>55</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cyclops Trophy</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Draken Trophy</name><price>15000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Draptor Scales</name><price>800</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Elven Hoof</name><price>115</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Frosty Ear of a Troll</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Giant Crab Pincer</name><price>950</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Goblin Ear</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Hollow Stampor Hoof</name><price>400</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Hydra Head</name><price>600</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lancer Beetle Shell</name><price>80</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lizard Trophy</name><price>8000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mantassin Tail</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Marsh Stalker Beak</name><price>65</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Marsh Stalker Feather</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Maxilla</name><price>250</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Minotaur Trophy</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Mutated Bat Ear</name><price>420</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Panther Head</name><price>750</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Panther Paw</name><price>300</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Bone</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Eye</name><price>350</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Pincers</name><price>410</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Quara Tentacle</name><price>140</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Rabbit's Foot</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Rorc Feather</name><price>70</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Sabretooth</name><price>400</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Sandcrawler Shell</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Scarab Pincers</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Stampor Horn</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Stampor Talons</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Terramite Legs</name><price>60</price><buy>0</buy>
+	</Item>
+</Items>

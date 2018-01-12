@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Tothdral">
+	<Item>
+		<id>0</id><name>Book of Necromantic Rituals</name><price>180</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Book of Prayers</name><price>120</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Broken Key Ring</name><price>8000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Broken Ring of Ending</name><price>4000</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cultish Mask</name><price>280</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cultish Robe</name><price>150</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Cultish Symbol</name><price>500</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dark Rosary</name><price>48</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Elvish Talisman</name><price>45</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Flask of Embalming Fluid</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Strange Symbol</name><price>200</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Unholy Bone</name><price>480</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Witch Broom</name><price>60</price><buy>0</buy>
+	</Item>
+</Items>

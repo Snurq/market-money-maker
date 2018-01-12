@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Luna">
+	<Item>
+		<id>0</id><name>Fern</name><price>24</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Red Mushroom</name><price>12</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Red Rose</name><price>11</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Star Herb</name><price>21</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Stone Herb</name><price>28</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Tulip</name><price>9</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>White Mushroom</name><price>6</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bamboo Stick</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Bundle of Cursed Straw</name><price>800</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Carniphila Seeds</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dark Mushroom</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Dung Ball</name><price>130</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Fire Mushroom</name><price>200</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Goat Grass</name><price>50</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Grave Flower</name><price>25</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Green Mushroom</name><price>100</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lump of Dirt</name><price>10</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Lump of Earth</name><price>130</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Nettle Blossom</name><price>75</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Nettle Spit</name><price>25</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Orange Mushroom</name><price>150</price><buy>0</buy>
+	</Item>
+</Items>

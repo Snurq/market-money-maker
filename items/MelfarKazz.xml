@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Items npc="Melfar">
+	<Item>
+		<id>0</id><name>Broken Crossbow</name><price>30</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Minotaur Horn</name><price>75</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Archer Armor</name><price>20</price><buy>0</buy>
+	</Item>
+	<Item>
+		<id>0</id><name>Piece of Warrior Armor</name><price>50</price><buy>0</buy>
+	</Item>
+</Items>
