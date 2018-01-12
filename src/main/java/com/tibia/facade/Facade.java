@@ -57,12 +57,14 @@ public class Facade {
 				
 				startShopping(items.get(i));
 			} else {
+				isTheFirstNegotiation = true;
 				showMessage("A janela do Market está fechada.");
 				i--;
 			}
 		}
 
 		mouse.clickOnCloseMarket();
+		System.exit(0);
 	}	
 
 	private void startShopping(Item item) throws InterruptedException, AWTException, IOException, TesseractException {

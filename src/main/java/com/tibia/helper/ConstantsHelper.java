@@ -4,7 +4,7 @@ public class ConstantsHelper {
 	/**
 	 * Não Alterar \/
 	 */
-	public final String PROGRAM_TITLE = "MarketMaker 1.0";
+	public final String PROGRAM_TITLE = "MarketMaker 1.0 by Dhuy";
 	
 	public final int NUMBER_OF_OFFERS_TO_CHECK = 7;
 	
