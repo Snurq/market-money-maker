@@ -22,7 +22,9 @@ public class UtilHelper {
 				.replaceAll("l", "1")
 				.replaceAll("S", "5")
 				.replaceAll("z", ":")
-				.replaceAll("O", "0");
+				.replaceAll("O", "0")
+				.replaceAll(Pattern.quote("''"), "")
+				.replaceAll(Pattern.quote("?"), "7");
 	}
 
 	public String normalizePrice(String price) {

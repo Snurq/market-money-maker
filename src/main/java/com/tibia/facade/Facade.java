@@ -165,7 +165,7 @@ public class Facade {
 
 				for (int i = 1; i < item.getBuy(); i++) {
 					mouse.clickOnIncreaseItemQuantity();
-					delay(150);
+					delay(50);
 				}
 
 				mouse.clickOnCreateOffer();
