@@ -24,7 +24,18 @@ import org.xml.sax.SAXException;
 import com.tibia.model.Item;
 
 public class XMLHelper {
-	private final String ITEMS_LIST_XML_PATH = "items/items.xml";
+	private ConstantsHelper constants;
+	private String ITEMS_LIST_XML_PATH;
+	
+	public XMLHelper() {
+		constants = new ConstantsHelper();
+		
+		if (constants.CHARACTER_NAME.equals("Gordo Dhuy")) {
+			ITEMS_LIST_XML_PATH = "items/items_gordo.xml";
+		} else if (constants.CHARACTER_NAME.equals("Warlock Dhuy")) {
+			ITEMS_LIST_XML_PATH = "items/items_warlock.xml";
+		}
+	}
 
 	public List<Item> getItemsList() {
 		List<Item> items = new ArrayList<Item>();

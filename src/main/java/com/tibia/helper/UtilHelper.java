@@ -24,6 +24,7 @@ public class UtilHelper {
 				.replaceAll("z", ":")
 				.replaceAll("O", "0")
 				.replaceAll(Pattern.quote("''"), "")
+				.replaceAll(Pattern.quote("'"), "")
 				.replaceAll(Pattern.quote("?"), "7");
 	}
 

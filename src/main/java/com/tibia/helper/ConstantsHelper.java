@@ -1,17 +1,14 @@
 package com.tibia.helper;
 
 public class ConstantsHelper {
-	/**
-	 * Não Alterar \/
-	 */
+//	public final String CHARACTER_NAME = "Gordo Dhuy";
+	public final String CHARACTER_NAME = "Warlock Dhuy";
+	
 	public final String PROGRAM_TITLE = "MarketMaker 1.0 by Dhuy";
 	public final int MAX_ACCEPTED_LATENCY = 500;
 	public final int NUMBER_OF_OFFERS_TO_CHECK = 7;
 	public final int NUMBER_OF_VISIBLE_BUY_OFFERS = 11;
 	public final int NUMBER_OF_TRANSACTIONS_REQUIRED = 50;
-	/**
-	 * Não Alterar /\
-	 */
 	
 	/**
 	 * Dell

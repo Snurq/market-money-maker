@@ -208,7 +208,7 @@ public class Facade {
 								
 								mouse.clickOnMyOffers();
 								
-								delay(2000);
+								delay(2500);
 								
 								int totalOfBuyOffers = Integer.parseInt(util.normalizeId(image.getTextFromImage(
 										constants.NUMBER_OF_BUY_OFFERS_X_TOP,
