@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Items>
 	<Item>
-		<id>2018-02-13, 15:42:24</id><name>Damselfly Eye</name><price>25</price><buy>30</buy>
+		<id>2018-02-13, 15:42:24</id><name>Damselfly Eye</name><price>25</price><buy>100</buy>
 	</Item>
 	<Item>
 		<id>2018-02-13, 15:42:41</id><name>Damselfly Wing</name><price>20</price><buy>50</buy>

@@ -1,7 +1,7 @@
 package com.tibia.helper;
 
 public class ConstantsHelper {
-//	public final String CHARACTER_NAME = "Gordo Dhuy";
+  	//public final String CHARACTER_NAME = "Gordo Dhuy";
 	public final String CHARACTER_NAME = "Warlock Dhuy";
 	
 	public final String PROGRAM_TITLE = "MarketMaker 1.0 by Dhuy";
