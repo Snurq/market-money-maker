@@ -255,7 +255,7 @@ public class Facade {
 								}
 								
 								if (!foundObsoleteOfferRow) {
-									for (int h = 0; h < (numberOfHiddenBuyOffers + 1); h++) {
+									for (int h = 0; h < numberOfHiddenBuyOffers; h++) {
 										currentBuyOfferId = util.normalizeId(image.getTextFromImage(
 											constants.LAST_BUY_OFFER_END_AT_X_TOP,
 											constants.LAST_BUY_OFFER_END_AT_Y_TOP,
