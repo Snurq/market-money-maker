@@ -1,198 +1,198 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><Items>
 	<Item>
-		<id>2018-02-15, 00:44:04</id><name>Angelic Axe</name><price>5000</price><buy>6</buy>
+		<id>2018-02-16, 15:35:36</id><name>Angelic Axe</name><price>5000</price><buy>6</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:44:23</id><name>Blue Robe</name><price>10000</price><buy>6</buy>
+		<id>2018-02-16, 15:36:17</id><name>Blue Robe</name><price>10000</price><buy>6</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:44:44</id><name>Broadsword</name><price>500</price><buy>25</buy>
+		<id>2018-02-15, 21:32:07</id><name>Broadsword</name><price>500</price><buy>25</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:45:01</id><name>Butcher</name><price>18000</price><buy>3</buy>
+		<id>2018-02-16, 15:37:02</id><name>Butcher</name><price>18000</price><buy>3</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 11:35:04</id><name>Crown Armor</name><price>12000</price><buy>7</buy>
+		<id>2018-02-16, 15:37:20</id><name>Crown Armor</name><price>12000</price><buy>7</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:45:38</id><name>Crown Legs</name><price>12000</price><buy>6</buy>
+		<id>2018-02-16, 15:38:01</id><name>Crown Legs</name><price>12000</price><buy>6</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 08:17:05</id><name>Crown Helmet</name><price>2500</price><buy>10</buy>
+		<id>2018-02-16, 15:38:42</id><name>Crown Helmet</name><price>2500</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:46:14</id><name>Crown Shield</name><price>8000</price><buy>6</buy>
+		<id>2018-02-16, 15:39:22</id><name>Crown Shield</name><price>8000</price><buy>6</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:46:32</id><name>Crusader Helmet</name><price>6000</price><buy>5</buy>
+		<id>2018-02-16, 15:39:46</id><name>Crusader Helmet</name><price>6000</price><buy>5</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:46:52</id><name>Dragon Shield</name><price>4000</price><buy>12</buy>
+		<id>2018-02-16, 15:40:11</id><name>Dragon Shield</name><price>4000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:47:09</id><name>Fire Axe</name><price>8000</price><buy>4</buy>
+		<id>2018-02-16, 15:40:56</id><name>Fire Axe</name><price>8000</price><buy>4</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:47:28</id><name>Fire Sword</name><price>4000</price><buy>12</buy>
+		<id>2018-02-16, 15:41:33</id><name>Fire Sword</name><price>4000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:47:47</id><name>Glorious Axe</name><price>3000</price><buy>15</buy>
+		<id>2018-02-16, 15:42:09</id><name>Glorious Axe</name><price>3000</price><buy>15</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:48:07</id><name>Guardian Shield</name><price>2000</price><buy>15</buy>
+		<id>2018-02-16, 15:42:50</id><name>Guardian Shield</name><price>2000</price><buy>15</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 00:48:25</id><name>Ice Rapier</name><price>1000</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:48:45</id><name>Obsidian Lance</name><price>500</price><buy>20</buy>
+		<id>2018-02-16, 11:15:15</id><name>Obsidian Lance</name><price>500</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:24:23</id><name>Shadow Sceptre</name><price>10000</price><buy>5</buy>
+		<id>2018-02-16, 11:15:52</id><name>Shadow Sceptre</name><price>10000</price><buy>5</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:49:24</id><name>Wand of Cosmic Energy</name><price>2000</price><buy>20</buy>
+		<id>2018-02-16, 15:43:56</id><name>Wand of Cosmic Energy</name><price>2000</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:49:43</id><name>Wand of Decay</name><price>1000</price><buy>15</buy>
+		<id>2018-02-16, 15:44:22</id><name>Wand of Decay</name><price>1000</price><buy>15</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:50:04</id><name>Wand of Draconia</name><price>1500</price><buy>25</buy>
+		<id>2018-02-16, 15:45:00</id><name>Wand of Draconia</name><price>1500</price><buy>25</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 00:50:25</id><name>Wand of Dragonbreath</name><price>200</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:25:58</id><name>Wand of Inferno</name><price>3000</price><buy>35</buy>
+		<id>2018-02-16, 11:16:54</id><name>Wand of Inferno</name><price>3000</price><buy>35</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:51:08</id><name>Wand of Starstorm</name><price>3600</price><buy>20</buy>
+		<id>2018-02-16, 15:46:06</id><name>Wand of Starstorm</name><price>3600</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:51:26</id><name>Wand of Voodoo</name><price>4400</price><buy>10</buy>
+		<id>2018-02-16, 15:46:52</id><name>Wand of Voodoo</name><price>4400</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:25:48</id><name>Bonebreaker</name><price>10000</price><buy>3</buy>
+		<id>2018-02-16, 15:47:10</id><name>Bonebreaker</name><price>10000</price><buy>3</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 00:52:03</id><name>Dark Helmet</name><price>250</price><buy>15</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:52:23</id><name>Dragon Hammer</name><price>2000</price><buy>20</buy>
+		<id>2018-02-16, 09:37:06</id><name>Dragon Hammer</name><price>2000</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:28:30</id><name>Dreaded Cleaver</name><price>15000</price><buy>3</buy>
+		<id>2018-02-16, 14:30:33</id><name>Dreaded Cleaver</name><price>15000</price><buy>3</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:29:32</id><name>Giant Sword</name><price>17000</price><buy>5</buy>
+		<id>2018-02-16, 15:48:17</id><name>Giant Sword</name><price>17000</price><buy>5</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:30:34</id><name>Haunted Blade</name><price>8000</price><buy>12</buy>
+		<id>2018-02-16, 14:31:36</id><name>Haunted Blade</name><price>8000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:30:54</id><name>Knight Legs</name><price>5000</price><buy>20</buy>
+		<id>2018-02-16, 15:49:15</id><name>Knight Legs</name><price>5000</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:53:58</id><name>Serpent Sword</name><price>900</price><buy>20</buy>
+		<id>2018-02-16, 14:32:51</id><name>Serpent Sword</name><price>900</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:32:02</id><name>Skull Staff</name><price>6000</price><buy>12</buy>
+		<id>2018-02-16, 14:33:43</id><name>Skull Staff</name><price>6000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:33:00</id><name>Titan Axe</name><price>4000</price><buy>10</buy>
+		<id>2018-02-16, 14:34:21</id><name>Titan Axe</name><price>4000</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:27:29</id><name>Tower Shield</name><price>8000</price><buy>10</buy>
+		<id>2018-02-16, 14:35:11</id><name>Tower Shield</name><price>8000</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:34:33</id><name>Vampire Shield</name><price>15000</price><buy>4</buy>
+		<id>2018-02-16, 14:36:01</id><name>Vampire Shield</name><price>15000</price><buy>4</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:35:34</id><name>Warrior Helmet</name><price>5000</price><buy>12</buy>
+		<id>2018-02-16, 14:36:53</id><name>Warrior Helmet</name><price>5000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:36:31</id><name>Hailstorm Rod</name><price>3000</price><buy>12</buy>
+		<id>2018-02-16, 14:37:34</id><name>Hailstorm Rod</name><price>3000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:37:31</id><name>Necrotic Rod</name><price>1000</price><buy>20</buy>
+		<id>2018-02-16, 14:38:16</id><name>Necrotic Rod</name><price>1000</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:38:31</id><name>Northwind Rod</name><price>1500</price><buy>20</buy>
+		<id>2018-02-16, 14:38:56</id><name>Northwind Rod</name><price>1500</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:29:18</id><name>Springsprout Rod</name><price>3600</price><buy>25</buy>
+		<id>2018-02-16, 14:39:41</id><name>Springsprout Rod</name><price>3600</price><buy>25</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:40:25</id><name>Terra Rod</name><price>2000</price><buy>25</buy>
+		<id>2018-02-16, 14:40:22</id><name>Terra Rod</name><price>2000</price><buy>25</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:41:21</id><name>Underworld Rod</name><price>4400</price><buy>15</buy>
+		<id>2018-02-16, 14:41:01</id><name>Underworld Rod</name><price>4400</price><buy>15</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:41:56</id><name>Amber Staff</name><price>8000</price><buy>8</buy>
+		<id>2018-02-16, 09:43:49</id><name>Amber Staff</name><price>8000</price><buy>8</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:58:11</id><name>Ancient Amulet</name><price>200</price><buy>20</buy>
+		<id>2018-02-16, 01:07:51</id><name>Ancient Amulet</name><price>200</price><buy>20</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 00:58:29</id><name>Assassin Dagger</name><price>20000</price><buy>3</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:58:47</id><name>Composite Hornbow</name><price>25000</price><buy>3</buy>
+		<id>2018-02-16, 14:41:47</id><name>Composite Hornbow</name><price>25000</price><buy>3</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 00:59:05</id><name>Crocodile Boots</name><price>1000</price><buy>8</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:59:26</id><name>Crystal Necklace</name><price>400</price><buy>25</buy>
+		<id>2018-02-16, 01:09:12</id><name>Crystal Necklace</name><price>400</price><buy>25</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 00:59:47</id><name>Crystal Ring</name><price>250</price><buy>25</buy>
+		<id>2018-02-16, 15:53:03</id><name>Crystal Ring</name><price>250</price><buy>25</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:00:07</id><name>Crystal Sword</name><price>600</price><buy>20</buy>
+		<id>2018-02-16, 01:10:13</id><name>Crystal Sword</name><price>600</price><buy>20</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:00:25</id><name>Daramian Waraxe</name><price>1000</price><buy>6</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:00:44</id><name>Death Ring</name><price>1000</price><buy>10</buy>
+		<id>2018-02-16, 01:10:42</id><name>Death Ring</name><price>1000</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:44:14</id><name>Demon Shield</name><price>30000</price><buy>3</buy>
+		<id>2018-02-16, 15:54:23</id><name>Demon Shield</name><price>30000</price><buy>3</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:01:20</id><name>Diamond Sceptre</name><price>3000</price><buy>8</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:31:47</id><name>Dragon Scale Mail</name><price>40000</price><buy>2</buy>
+		<id>2018-02-16, 14:43:53</id><name>Dragon Scale Mail</name><price>40000</price><buy>2</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:01:55</id><name>Dragon Slayer</name><price>15000</price><buy>4</buy>
+		<id>2018-02-16, 14:44:30</id><name>Dragon Slayer</name><price>15000</price><buy>4</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:45:25</id><name>Dragonbone Staff</name><price>3000</price><buy>12</buy>
+		<id>2018-02-16, 09:46:28</id><name>Dragonbone Staff</name><price>3000</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:02:35</id><name>Emerald Bangle</name><price>800</price><buy>25</buy>
+		<id>2018-02-16, 01:13:28</id><name>Emerald Bangle</name><price>800</price><buy>25</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:02:55</id><name>Epee</name><price>8000</price><buy>20</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:03:14</id><name>Furry Club</name><price>1000</price><buy>12</buy>
+		<id>2018-02-16, 15:55:38</id><name>Furry Club</name><price>1000</price><buy>12</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:03:32</id><name>Glacier Kilt</name><price>11000</price><buy>5</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:03:49</id><name>Glacier Mask</name><price>2500</price><buy>6</buy>
+		<id>2018-02-16, 11:30:03</id><name>Glacier Mask</name><price>2500</price><buy>6</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:04:07</id><name>Golden Armor</name><price>20000</price><buy>2</buy>
+		<id>2018-02-16, 11:30:33</id><name>Golden Armor</name><price>20000</price><buy>2</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:33:18</id><name>Guardian Halberd</name><price>11000</price><buy>2</buy>
+		<id>2018-02-16, 14:45:52</id><name>Guardian Halberd</name><price>11000</price><buy>2</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:04:44</id><name>Hibiscus Dress</name><price>3000</price><buy>8</buy>
@@ -201,31 +201,31 @@
 		<id>2018-02-15, 01:05:02</id><name>Lightning Headband</name><price>2500</price><buy>8</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:47:34</id><name>Lightning Pendant</name><price>1500</price><buy>15</buy>
+		<id>2018-02-16, 09:48:30</id><name>Lightning Pendant</name><price>1500</price><buy>15</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 14:48:18</id><name>Lunar Staff</name><price>5000</price><buy>3</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:05:59</id><name>Medusa Shield</name><price>9000</price><buy>8</buy>
+		<id>2018-02-16, 09:49:29</id><name>Medusa Shield</name><price>9000</price><buy>8</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:06:17</id><name>Mercenary Sword</name><price>12000</price><buy>5</buy>
+		<id>2018-02-15, 19:42:09</id><name>Mercenary Sword</name><price>12000</price><buy>5</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:06:34</id><name>Naginata</name><price>2000</price><buy>3</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 16:35:07</id><name>Nightmare Blade</name><price>35000</price><buy>2</buy>
+		<id>2018-02-16, 09:50:04</id><name>Nightmare Blade</name><price>35000</price><buy>2</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:07:15</id><name>Pirate Voodoo Doll</name><price>500</price><buy>30</buy>
+		<id>2018-02-16, 09:50:26</id><name>Pirate Voodoo Doll</name><price>500</price><buy>30</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:07:33</id><name>Platinum Amulet</name><price>2500</price><buy>10</buy>
+		<id>2018-02-16, 15:58:35</id><name>Platinum Amulet</name><price>2500</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:07:52</id><name>Sacred Tree Amulet</name><price>3000</price><buy>8</buy>
+		<id>2018-02-16, 11:32:50</id><name>Sacred Tree Amulet</name><price>3000</price><buy>8</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 10:43:37</id><name>Scarab Amulet</name><price>200</price><buy>25</buy>
@@ -240,27 +240,27 @@
 		<id>2018-02-15, 10:45:43</id><name>Silver Brooch</name><price>150</price><buy>50</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:51:33</id><name>Spiked Squelcher</name><price>5000</price><buy>8</buy>
+		<id>2018-02-16, 14:49:04</id><name>Spiked Squelcher</name><price>5000</price><buy>8</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:09:50</id><name>Steel Boots</name><price>30000</price><buy>3</buy>
+		<id>2018-02-15, 19:44:04</id><name>Steel Boots</name><price>30000</price><buy>3</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:10:09</id><name>Taurus Mace</name><price>500</price><buy>15</buy>
+		<id>2018-02-16, 11:34:07</id><name>Taurus Mace</name><price>500</price><buy>15</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:10:27</id><name>Terra Amulet</name><price>1500</price><buy>12</buy>
+		<id>2018-02-16, 09:52:19</id><name>Terra Amulet</name><price>1500</price><buy>12</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:52:51</id><name>Terra Boots</name><price>2500</price><buy>8</buy>
+		<id>2018-02-16, 09:52:58</id><name>Terra Boots</name><price>2500</price><buy>8</buy>
 	</Item>
 	<Item>
 		<id>2018-02-15, 01:11:04</id><name>Terra Hood</name><price>2500</price><buy>10</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 14:53:50</id><name>Terra Legs</name><price>11000</price><buy>5</buy>
+		<id>2018-02-16, 16:00:35</id><name>Terra Legs</name><price>11000</price><buy>5</buy>
 	</Item>
 	<Item>
-		<id>2018-02-15, 01:11:39</id><name>Terra Mantle</name><price>11000</price><buy>5</buy>
+		<id>2018-02-16, 16:00:53</id><name>Terra Mantle</name><price>11000</price><buy>5</buy>
 	</Item>
 </Items>
