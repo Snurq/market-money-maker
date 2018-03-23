@@ -25,7 +25,10 @@ public class UtilHelper {
 				.replaceAll("O", "0")
 				.replaceAll(Pattern.quote("''"), "")
 				.replaceAll(Pattern.quote("'"), "")
-				.replaceAll(Pattern.quote("?"), "7");
+				.replaceAll(Pattern.quote("?"), "7")
+				.replaceAll(Pattern.quote("]"), "1")
+				.replaceAll(Pattern.quote("111"), "11")
+				.replaceAll(Pattern.quote("411"), "41");
 	}
 
 	public String normalizePrice(String price) {
@@ -34,7 +37,8 @@ public class UtilHelper {
 				.replaceAll(" ", "")
 				.replaceAll(",", "")
 				.replaceAll("l", "1")
-				.replaceAll("O", "0");
+				.replaceAll("O", "0")
+				.replaceAll(Pattern.quote("e"), "6");
 	}
 
 	public String normalizePing(String ping) {

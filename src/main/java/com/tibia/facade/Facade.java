@@ -200,6 +200,8 @@ public class Facade {
 							constants.FIRST_SELLER_END_AT_Y_BOTTOM,
 							f));
 						
+						System.out.println("Janela Market Linha Atual: " + currentRowId);
+						
 						if (!currentRowId.equals("")) {
 							if (item.getId().equals(currentRowId)) {
 								System.out.println("Cancelar a oferta obsoleta que está na linha " + (f + 1) + ".");
@@ -230,26 +232,38 @@ public class Facade {
 											constants.FIRST_BUY_OFFER_END_AT_Y_BOTTOM,
 											g));
 										
-										if (item.getId().equals(currentBuyOfferId)) {
-											delay(1000);
-											
-											mouse.clickOnCancelOffer();
-											
-											delay(1000);
-											
+										System.out.println("Janela Buy Offers Linha Atual: " + currentBuyOfferId);
+										
+										if (currentBuyOfferId.equals("\"?\\it;“A") || currentBuyOfferId.equals("\"\"?\\it;“A\"")) {
 											foundObsoleteOfferRow = true;
 											
 											mouse.clickOnBackToMarket();
 											
 											delay(2000);
 											
-											System.out.println("Oferta do item " + item.getName() + " com o id: " + currentBuyOfferId + ". Cancelada com sucesso.");
-											
 											break;
 										} else {
-											keyboard.type("ˇ");
-											
-											delay(100);
+											if (item.getId().equals(currentBuyOfferId)) {
+												delay(1000);
+												
+												mouse.clickOnCancelOffer();
+												
+												delay(1000);
+												
+												foundObsoleteOfferRow = true;
+												
+												mouse.clickOnBackToMarket();
+												
+												delay(2000);
+												
+												System.out.println("Oferta do item " + item.getName() + " com o id: " + currentBuyOfferId + ". Cancelada com sucesso.");
+												
+												break;
+											} else {
+												keyboard.type("ˇ");
+												
+												delay(100);
+											}
 										}
 									}
 								}
@@ -262,26 +276,38 @@ public class Facade {
 											constants.LAST_BUY_OFFER_END_AT_X_BOTTOM,
 											constants.LAST_BUY_OFFER_END_AT_Y_BOTTOM));
 										
-										if (item.getId().equals(currentBuyOfferId)) {
-											delay(1000);
-											
-											mouse.clickOnCancelOffer();
-											
-											delay(1000);
-											
+										System.out.println("Janela Buy Offers Linha Atual: " + currentBuyOfferId);
+										
+										if (currentBuyOfferId.equals("\"?\\it;“A") || currentBuyOfferId.equals("\"\"?\\it;“A\"")) {
 											foundObsoleteOfferRow = true;
 											
 											mouse.clickOnBackToMarket();
 											
 											delay(2000);
 											
-											System.out.println("Oferta do item " + item.getName() + " com o id: " + currentBuyOfferId + ". Cancelada com sucesso.");
-											
 											break;
 										} else {
-											keyboard.type("ˇ");
-											
-											delay(100);
+											if (item.getId().equals(currentBuyOfferId)) {
+												delay(1000);
+												
+												mouse.clickOnCancelOffer();
+												
+												delay(1000);
+												
+												foundObsoleteOfferRow = true;
+												
+												mouse.clickOnBackToMarket();
+												
+												delay(2000);
+												
+												System.out.println("Oferta do item " + item.getName() + " com o id: " + currentBuyOfferId + ". Cancelada com sucesso.");
+												
+												break;
+											} else {
+												keyboard.type("ˇ");
+												
+												delay(100);
+											}
 										}
 									}
 								}

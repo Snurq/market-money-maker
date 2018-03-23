@@ -72,12 +72,12 @@ public class ConstantsHelper {
 	
 	public final int FIRST_BUY_OFFER_END_AT_X_TOP = 1030;
 	public final int FIRST_BUY_OFFER_END_AT_Y_TOP = 491;
-	public final int FIRST_BUY_OFFER_END_AT_X_BOTTOM = 1303;
+	public final int FIRST_BUY_OFFER_END_AT_X_BOTTOM = 1290;
 	public final int FIRST_BUY_OFFER_END_AT_Y_BOTTOM = 507;
 	
 	public final int LAST_BUY_OFFER_END_AT_X_TOP = 1030;
 	public final int LAST_BUY_OFFER_END_AT_Y_TOP = 651;
-	public final int LAST_BUY_OFFER_END_AT_X_BOTTOM = 1303;
+	public final int LAST_BUY_OFFER_END_AT_X_BOTTOM = 1290;
 	public final int LAST_BUY_OFFER_END_AT_Y_BOTTOM = 667;
 	
 	public final int NUMBER_OF_BUY_OFFERS_X_TOP = 676;
